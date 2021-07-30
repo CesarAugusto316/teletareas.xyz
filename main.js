@@ -14,7 +14,6 @@ const Celebrities = {
         [['Una mentira puede llegar a viajar por medio mundo, mientras la verdad se está poniendo el calzado.'], ['(Mark Twain)']],
         [['Los monos son demasiado buenos para que el hombre pueda descender de ellos.'], ['(Friedrich Nietzsche)']],
         [['Si buscas la perfección, nunca estarás contento.'], ['(León Tolstói)']],
-        [['Los verdaderos amigos te apuñalan por delante.'], ['(Oscar Wilde)']],
         [['En tiempos de engaños, decir la verdad es un acto revolucionario.'], ['(George Orwell)']],
         [['Como no me he preocupado de nacer, no me preocupo de morir.'], ['(Federico García Lorca)']],
         [['Un hombre ingenioso no se equivoca. Sus errores son volitivos y son portales del descubrimiento.'], ['(James Joyce)']],
@@ -27,7 +26,6 @@ const Celebrities = {
         [['La forma de hacer que las personas sean confiables es confiando en ellas.'], ['(Ernest Hemingway)']],
         [['La verdadera generosidad hacia el futuro radica en entregar todo al presente.'], ['(Albert Camus)']],
         [['El miedo es inevitable, debo aceptarlo, pero no puedo dejar que me paralice.'], ['(Isabel Allende)']],
-        [['Para poder entender, me destruyo.'], ['(Fernando Pessoa)']],
         [['Soy incapaz de concebir lo infinito, pero tampoco acepto lo finito. Deseo que esta aventura que es el contexto de mi vida continúe sin fin.'], ['(Simone de Beauvoir)']],
         [['Podemos desafiar las leyes humanas, pero no podemos resistirnos a las leyes de la naturaleza.'], ['(Julio Verne)']],
         [['No puedes nadar hacia nuevos horizontes hasta que tengas el coraje de perder de vista la costa.'], ['(William Faulkner)']],
@@ -140,7 +138,7 @@ radius = width/2.5;
             "transition":"1s"
         });
         
-        }, 5000);
+        }, 6000);
     
 });
 
