@@ -23,20 +23,20 @@
     <!-- NAVIGATION BAR -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
-            <img id="logo" src="/img/logos/teletareas_logo.png" alt="logo">
+            <span id="logo-container"><img id="logo" src="/img/TELETAREAS_texto.png" alt="logo"></span>
             <!-- <i class="fas fa-graduation-cap fa-2x"></i> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-door-fill "></i>Bienvenido</a>
-                    </li>
-                    <li class="nav-item">
+                    </li> -->
+                    <li class="nav-item" style="min-width: 10.5rem;">
                         <a class="nav-link" href="#cards-margin"><i class="bi bi-question-circle-fill"></i>Cómo trabajamos</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown" style="min-width: 7rem;">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mira los servicios que ofrecemos para ayudarte">
                             <i class="bi bi-pencil-fill"></i>Servicios
                         </a>
@@ -48,22 +48,27 @@
                                 <li><a class="dropdown-item" href="#"><i class="bi bi-whatsapp"></i>0999534685</a></li>
                             </ul>
                     </li>
-                    <li class="nav-item">
+                
+                    <li class="nav-item" style="min-width: 7rem;">
                             <a class="nav-link" id="contactos" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Escribenos a nuestro correo"><i class="bi bi-envelope-open-fill" ></i>Contactos</a>
                     </li>
-                    <li class="nav-item">
-                        <a  class="nav-link" href="https://www.instagram.com/teletareas.xyz" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Compartir"><i class="fab fa-instagram fa-3x"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.facebook.com/teletareas.xyz" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Compartir"><i class="fab fa-facebook fa-3x"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.twitter.com/@teletareas" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Compartir"><i class="fab fa-twitter fa-3x"></i></a>
-                    </li>
                 </ul>
+                <!-- OUTSIDE MAIN NAV -->
+                <ul class="navbar-nav justify-content-end">  
+                    <li class="nav-item">
+                        <a  class="nav-link" href="https://www.instagram.com/teletareas.xyz" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Compartir"><i class="fab fa-instagram fa-2x"></i></a>
+                    </li>
+                    <li class="nav-item"">
+                        <a class="nav-link" href="https://www.facebook.com/teletareas.xyz" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Compartir"><i class="fab fa-facebook fa-2x"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.twitter.com/@teletareas" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Compartir"><i class="fab fa-twitter fa-2x"></i></a>
+                    </li>
+                </ul> 
+                <!-- OUTSIDE MAIN NAV -->
                 <!-- SEARCH BAR -->
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 12rem;">
                     <button class="btn btn-outline-primary" type="submit">Buscar</button>
                 </form>
                 <!-- SEARCH BAR -->
@@ -163,7 +168,7 @@
     <!-- HEADER -->
 
     <!-- SECTION1 HOW WE WORK-->
-    <section class="sections bg-light">
+    <section class="sections bg-light" style="margin-bottom: 15px;">
             <div class="container" style="margin:auto;">
                 <h2>Cómo trabajamos ?</h2>
                 <div class="row justify-content-between id="cards-margin">
@@ -174,8 +179,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Somos Profesionales!</h5>
                                 <p class="card-text">
-                                    Cotiza el valor de tu tarea, sea ésta de Matemáticas, 
-                                    Física, Química, etc. Para cada asignatura tenemos un 
+                                    Cotiza el valor de tu tarea. Para cada asignatura tenemos un 
                                     grupo de profesionales para ayudarte.
                                 </p>
                             </div>
@@ -189,7 +193,7 @@
                                 <h5 class="card-title">Tu tarea a tiempo!</h5>
                                 <p class="card-text">
                                     Tan sólo dinos para cuando la necesitas y estará lista 
-                                    sin menor contratiempo, pregunta por nuestras ofertas.
+                                    sin menor contratiempo.
                                 </p>
                             </div>
                           </div>
@@ -202,8 +206,7 @@
                                 <h5 class="card-title">100% Confiables!</h5>
                                 <p class="card-text">
                                     Tu tarea lista y en tus manos una vez hecho el pago, 
-                                    trabajamos con las diferentes plataformas eléctronicas.
-                                </p>
+                                    trabajamos con varias plataformas electrónicas.</p>
                             </div>
                           </div>
                     </div>
@@ -401,18 +404,18 @@
     <!-- SECTION2 WHY USE TELETAREAS-->
 
     <!-- OUR SERVICES -->
-    <div class="container bg-light sections">
+    <div class="container bg-light sections" style="margin-bottom: -45px; margin-top: -20px;">
             <!-- Heading -->
         <div class="row">
             <h2>Nuestros Servicios</h2>
         </div>
             <!-- Heading -->
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center ">
             <!-- TAB WITH OUR SERVICES -->
-            <div class="col-lg-3" style="max-width: 35rem; margin-bottom: 20px;">
+            <div class="col-lg-3" style="max-width: 31rem; margin-bottom: 10px;">
                  <!-- <h5 class="mb-3 mt-5">Choose Plan</h5> -->
-                <div id="services-card" class="choose-plan text-black-50 p-3 float-left">
+                <div id="services-card" class="choose-plan text-black p-3 float-left align-self-end">
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs bg-light" role="tablist">
                         <li class="nav-item">
@@ -426,33 +429,30 @@
                             <!-- Tab panes -->
                             <div class="tab-content">
                                 <div id="basic" class="container tab-pane active">
-                                    <p class="mt-3">Convert unique PSD/Sketch Homepage design to Responsive Bootstrap HTML/CSS with 3 rounds of revision</p>
+
+                                    <p class="mt-3">Convierte esas dudas  que tienes por no poder hacer tus tareas en excelentes calificaciones</p>
                                     <hr>
                                     <ul>
-                                        <li>2 Page</li>
-                                        <li>Responsive Design</li>
-                                        <li>Slider/Scroller</li>
-                                        <li>Server Upload</li>
-                                        <li>Browser Compatibility</li>
+                                        <li>Por número de páginas</li>
+                                        <li>Por nivel académico</li>
+                                        <li>Por urgencia o prioridad</li>
+                                        <li>Por tipo de materia o asignatura.</li>
                                     </ul>
                                     <hr />
                                     <button class="btn btn-outline-primary float-right">Empezar</button>
                                 </div>
                                 <div id="standard" class="container tab-pane fade">
-                                    <p class="mt-3">Home + 1 inner page PSD/Sketch design to Responsive Bootstrap HTML/CSS with 3 rounds of revisions</p>
+                                    <p class="mt-3">Gradúate con una excelente  e interesante tésis, impresiona a tu jurado evaluador con una gran disertación  redactada por nuestros profesinales</p>
                                     <hr>
                                     <ul>
-                                        <li>5 Page</li>
-                                        <li>Responsive Design</li>
-                                        <li>Slider/Scroller</li>
-                                        <li>Server Upload</li>
-                                        <li>Browser Compatibility</li>
+                                        <li>Asesoría parcial o completa</li>
+                                        <li>Trabajo de investigación y redacción</li>
                                     </ul>
                                     <hr />
                                     <button class="btn btn-outline-primary float-right">Empezar</button>
                                 </div>
                             </div>
-                        </div>
+                    </div>
             </div>
             <!-- TAB WITH OUR SERVICES -->
 
@@ -463,141 +463,152 @@
                    <div class="round"></div>
                    <div class="dotCircle">
                       <span class="itemDot active itemDot1" data-tab="1">
-                      <i class="fa fa-clock-o"></i>
+                        <i class="fas fa-square-root-alt fa-lg"></i>
                       <span class="forActive"></span>
                       </span>
                       <span class="itemDot itemDot2" data-tab="2">
-                      <i class="fa fa-comments"></i>
+                        <i class="fas fa-flask fa-lg"></i>
                       <span class="forActive"></span>
                       </span>
                       <span class="itemDot itemDot3" data-tab="3">
-                      <i class="fa fa-user"></i>
+                      <i class="fas fa-atom fa-lg"></i>
                       <span class="forActive"></span>
                       </span>
                       <span class="itemDot itemDot4" data-tab="4">
-                      <i class="fa fa-tags"></i>
+                      <i class="fa fa-chart-line fa-lg"></i>
                       <span class="forActive"></span>
                       </span>
                       <span class="itemDot itemDot5" data-tab="5">
-                      <i class="fa fa-upload"></i>
+                      <i class="fas fa-laptop-code fa-lg"></i>
                       <span class="forActive"></span>
                       </span>
                       <span class="itemDot itemDot6" data-tab="6">
-                      <i class="fa fa-briefcase"></i>
+                        <i class="fas fa-stethoscope fa-lg"></i>
                       <span class="forActive"></span>
                       </span>
                    </div>
                    <div class="contentCircle">
                       <div class="CirItem title-box active CirItem1">
-                         <h2 class="title"><span>Automate</span></h2>
-                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                         <i class="fa fa-clock-o"></i>
+                         <h2 class="title"><span>Matemáticas</span></h2>
+                         <p class="text-black-50">Teoría de conjuntos, geometría analítica, cálculo, álgebra, matrices, functiones, estadística, probabilidades, análisis, etc..</p>
+                         <i class="fas fa-square-root-alt fa-lg"></i>
                       </div>
                       <div class="CirItem title-box CirItem2">
-                         <h2 class="title"><span>Chat </span></h2>
-                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                         <i class="fa fa-comments"></i>
+                         <h2 class="title"><span>Química</span></h2>
+                         <p class="text-black-50">Ingeniería Química, química orgánica e inorgánica, bioquímica, química física, etc..</p>
+                         <i class="fas fa-flask fa-lg"></i>
                       </div>
                       <div class="CirItem title-box CirItem3">
-                         <h2 class="title"><span>Responses</span></h2>
-                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                         <i class="fa fa-user"></i>
+                         <h2 class="title"><span>Física</span></h2>
+                         <p class="text-black-50">Mecánica, electrónica, física aplicada, física teorica, física computacional, series de Fourier, termodinámica, etc..</p>
+                         <i class="fas fa-atom fa-lg"></i>
                       </div>
                       <div class="CirItem title-box CirItem4">
-                         <h2 class="title"><span>Tags</span></h2>
+                         <h2 class="title"><span>Finanzas</span></h2>
                          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                         <i class="fa fa-tags"></i>
+                         <i class="fa fa-chart-line fa-lg"></i>
                       </div>
                       <div class="CirItem title-box CirItem5">
-                         <h2 class="title"><span>Sharing</span></h2>
+                         <h2 class="title"><span>Informática</span></h2>
                          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                         <i class="fa fa-upload"></i>
+                         <i class="fas fa-laptop-code fa-lg"></i>
                       </div>
                       <div class="CirItem title-box CirItem6">
-                         <h2 class="title"><span>Support</span></h2>
+                         <h2 class="title"><span>y muchas más..</span></h2>
                          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                         <i class="fa fa-briefcase"></i>
+                         <i class="fas fa-stethoscope fa-lg"></i>
                       </div>
                    </div>
                 </div>
             </div>
-
-               
         </div>
     </div>   
     <!-- OUR SERVICES -->
 
+    <!-- SECTION3 TEAM MEMBERS-->
+    <section class="gradient" style="margin-bottom: -10px;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#f8f9fa" fill-opacity="1" d="M0,128L48,122.7C96,117,192,107,288,122.7C384,139,480,181,576,213.3C672,245,768,267,864,277.3C960,288,1056,288,1152,240C1248,192,1344,96,1392,48L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+                <div class="container" style="margin-top: 30px;">
+                        <div class="row justify-content-center">
+                            <div class="col-md-5">
+                                <h3 style="margin-top: 1.5rem;">Nuestro Equipo</h3>
+                            </div>
+                        </div>
+                            <div class="row text-center">
+                        
+                                <!-- Team item -->
+                                <div class="col-xl-3 col-sm-6 mb-5">
+                                    <div class="bg-light rounded shadow-sm py-5 px-4"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                                        <h5 class="mb-0">Manuella Nevoresky</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+                                        <ul class="social mb-0 list-inline mt-3">
+                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div><!-- End -->
+                        
+                                <!-- Team item -->
+                                <div class="col-xl-3 col-sm-6 mb-5">
+                                    <div class="bg-light rounded shadow-sm py-5 px-4"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-2.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                                        <h5 class="mb-0">Samuel Hardy</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+                                        <ul class="social mb-0 list-inline mt-3">
+                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div><!-- End -->
+                        
+                                <!-- Team item -->
+                                <div class="col-xl-3 col-sm-6 mb-5">
+                                    <div class="bg-light rounded shadow-sm py-5 px-4"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-1.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                                        <h5 class="mb-0">Tom Sunderland</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+                                        <ul class="social mb-0 list-inline mt-3">
+                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div><!-- End -->
+                        
+                                <!-- Team item -->
+                                <div class="col-xl-3 col-sm-6 mb-5">
+                                    <div class="bg-light rounded shadow-sm py-5 px-4"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                                        <h5 class="mb-0">John Tarly</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+                                        <ul class="social mb-0 list-inline mt-3">
+                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div><!-- End -->
+                            </div>
+                </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#f8f9fa" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,128C672,107,768,85,864,90.7C960,96,1056,128,1152,144C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    </section>
+    <!-- SECTION3 TEAM MEAMBERS-->
 
-
-        <!-- SECTION3 TEAM MEMBERS-->
-    <div class="container">
-            <div class="row text-center">
-        
-                <!-- Team item -->
-                <div class="col-xl-3 col-sm-6 mb-5">
-                    <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                        <h5 class="mb-0">Manuella Nevoresky</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
-                        <ul class="social mb-0 list-inline mt-3">
-                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
-                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
-                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
-                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div><!-- End -->
-        
-                <!-- Team item -->
-                <div class="col-xl-3 col-sm-6 mb-5">
-                    <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-2.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                        <h5 class="mb-0">Samuel Hardy</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
-                        <ul class="social mb-0 list-inline mt-3">
-                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
-                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
-                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
-                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div><!-- End -->
-        
-                <!-- Team item -->
-                <div class="col-xl-3 col-sm-6 mb-5">
-                    <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-1.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                        <h5 class="mb-0">Tom Sunderland</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
-                        <ul class="social mb-0 list-inline mt-3">
-                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
-                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
-                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
-                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div><!-- End -->
-        
-                <!-- Team item -->
-                <div class="col-xl-3 col-sm-6 mb-5">
-                    <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                        <h5 class="mb-0">John Tarly</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
-                        <ul class="social mb-0 list-inline mt-3">
-                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
-                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
-                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
-                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div><!-- End -->
+    <!-- FAQ -->
+    <section class="bg-light" style="margin-top: -10px; padding-top: 30px;">
+        <div class="container">
+            <div class="row">
+                <h2>Preguntas Frequentes</h2>
             </div>
-    </div>
-        <!-- SECTION3 TEAM MEAMBERS-->
-
-        <!-- FAQ -->
-    <section class="mt-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 offset-md-3">
+            <div class="row justify-content-md-around mt-3">
+                <!-- FAQ -->
+                <div class="col-md-5" style="margin-bottom: 75px;">
                             <div class="accordion accordion-flush" id="faqlist">
                                 <div class="accordion-item">
                                     <h5 class="accordion-header">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
-                                        What is Lorem Ipsum?
+                                        Con qué tipo de tareas nos pueden ayudar?
                                         </button>
                                     </h5>
                                     <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
@@ -610,7 +621,7 @@
                                 <div class="accordion-item">
                                     <h5 class="accordion-header">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
-                                        Why do we use it?
+                                        Nos pueden ayudar con exámenes?
                                         </button>
                                     </h5>
                                     <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
@@ -623,7 +634,7 @@
                                 <div class="accordion-item">
                                     <h5 class="accordion-header">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
-                                        Where does it come from?
+                                        En qué formatos puedo enviar mi tarea?
                                         </button>
                                     </h5>
                                     <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
@@ -636,7 +647,7 @@
                                 <div class="accordion-item">
                                     <h5 class="accordion-header">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
-                                        Where does it come from?
+                                        En qué tiempo estará lista?
                                         </button>
                                     </h5>
                                     <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
@@ -649,7 +660,7 @@
                                 <div class="accordion-item">
                                     <h5 class="accordion-header">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
-                                        Where does it come from?
+                                        Como puedo realizar el pago?
                                         </button>
                                     </h5>
                                     <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
@@ -659,17 +670,78 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
                 </div>
+                <!-- FAQ -->
+
+                <!-- FORM -->
+                <div class="col-md-5">
+                    <h3 class="mb-4 fs-5 text-secondary text-uppercase">Contacta nos</h3>
+                    <form class="row g-3 needs-validation" novalidate>
+                              <div class="col-md-6">
+                                <label for="validationCustom01" class="form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="escribe tu nombre aquí" required>
+                                <div class="valid-feedback">
+                                  Looks good!
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <label for="validationCustomUsername" class="form-label">Email:</label>
+                                <div class="input-group">
+                                  <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                  <input type="text" class="form-control" id="validationCustomUsername" placeholder="tu@email.com" aria-describedby="inputGroupPrepend" required>
+                                  <div class="invalid-feedback">
+                                    Please choose a username.
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <label class="form-label" for="">Tu mensaje aquí:</label>
+                                  <textarea class="form-control" name="mensaje" id="" cols="" rows="3"></textarea>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="row-cols-md-1 mb-4">
+                                    <label for="validationCustom03" class="form-label">Ciudad:</label>
+                                    <input type="text" class="form-control" id="validationCustom03" required placeholder="escribe tu ciudad">
+                                    <div class="invalid-feedback">
+                                        Please provide a valid city.
+                                    </div>
+                                </div>
+                                
+                                  <div class="row-cols-md-1 mb-3">
+                                      <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                          <label class="form-check-label" for="invalidCheck">
+                                              <small> Estoy de acuerdo con términos y condiciones</small>
+                                            </label>
+                                            <div class="invalid-feedback">
+                                          You must agree before submitting.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row-cols-md-2 mb-2">
+                                    <button class="btn btn-primary" type="submit">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                <!-- FORM -->
+            </div>
+        </div>
     </section>
-        <!-- FAQ -->
+    <!-- FAQ -->
+
+    <!-- CARROUSEL FROM SOCIAL MEDIA -->
+    <!-- <div class="container bg-light">
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        <div class="elfsight-app-f0ca46a3-bcda-4d18-9d51-9de83705a4a3" class="bg-light"></div>
+    </div> -->
+    <!-- CARROUSEL FROM SOCIAL MEDIA -->
 
     <!-- FOOTER -->
     <footer>
-            <div class="bg-light pt-5 mt-5">
+            <div  class="bg-light" style="margin-top: 140px;">
                 <div class="container">
-                    <div class="row">
+                    <div class="row justify-content-center">
                         <div class="col-sm-6 col-md-3">
                             <div class="widget-title">
                                 <h3 class="mb-4 fs-5 text-secondary text-uppercase">Customer support</h3>
@@ -706,7 +778,7 @@
                                 <li><a href="#">Terms & conditions</a></li>
                             </ul>
                         </div>
-                        <div class="col-sm-6 col-md-3">
+                        <!-- <div class="col-sm-6 col-md-3">
                             <div class="widget-title">
                                 <h3 class="mb-4 fs-5 text-secondary text-uppercase">Newsletter signup</h3>
                             </div>
@@ -722,12 +794,12 @@
                                     <button type="submit" class="btn btn-success w-100">Submit</button>
                                 </div>
                             </form>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <!-- final gradient footer -->
-                <div class="col-12 gradient" style="text-align:center; padding-bottom: 45px;">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f8f9fa" fill-opacity="1" d="M0,128L48,149.3C96,171,192,213,288,208C384,203,480,149,576,144C672,139,768,181,864,218.7C960,256,1056,288,1152,272C1248,256,1344,192,1392,160L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+                <div class="col-12 gradient" style="text-align:center; padding-bottom: 20px; margin-top: 0px;">
+                    <svg id= xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f8f9fa" fill-opacity="1" d="M0,128L48,149.3C96,171,192,213,288,208C384,203,480,149,576,144C672,139,768,181,864,218.7C960,256,1056,288,1152,272C1248,256,1344,192,1392,160L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
                     <p>
                         <a href="https://storyset.com/people">People illustrations by Storyset</a> <br>
                         <a href="https://storyset.com/">Illustrations by Storyset</a><br>

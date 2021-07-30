@@ -9,18 +9,22 @@ body {
 }
 /* NAVIGATION */
 .navbar {
-    background: rgba(42, 42, 66, 0.6) ;
+    background: rgba(42, 42, 66, 0.7) ;
 }
 .dropdown-menu {
-    background: rgba(42, 42, 66, 0.6) ;
+    background: rgba(42, 42, 66, 0.7) ;
 }
 /* NAVIGATION */
   
 .navbar-nav li a {
     color: rgb(0, 234, 255) !important;
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.5rem;
-    font-weight: 500;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 6px;
+    padding-bottom: 5px;
 }
 
 
@@ -39,17 +43,22 @@ header {
 }
 
 #logo {
-    height: 2rem;
-    width: 2.5rem;
-    background-color:  rgba(0, 234, 255, 0.7);
-    border-radius: 40%;
-    margin-right: 10px;
-    margin-left: 0;
+    height: 1.6rem;
+    width: 9rem;
+    margin-right: 20px;
+    transform: none;
+    /* background-color:  rgba(236, 244, 245, 0.1); */
 }
+/* #logo-container {
+    padding-top: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+} */
 
 a:hover {
     background-color: rgba(199, 199, 250, 0.2);
-    border-radius: 3px;;
+    border-radius: 3px;
 }
 
 .dropdown-menu a:hover {
@@ -69,13 +78,13 @@ h1 {
 }
 
 h2 {
-    font-size: 2.1rem;
+    font-size: 2.2rem;
     text-align: center;
     font-family: 'Lobster', cursive;
     text-shadow: rgba(199, 199, 250, 0.2);
     margin-top: 0%;
     padding-top: 0%;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 h4 {
     color: rgb(0, 234, 255);
@@ -88,14 +97,20 @@ h4 {
 h3 {
     text-align: center;
     /* margin-top: -3rem; */
-    text-shadow: 2px 2px 2px rgb(101, 97, 97);
+    /* text-shadow: 2px 2px 2px rgb(101, 97, 97); */
     color: whitesmoke;
-    font-size: 1.8rem;
-    font-weight: 800;
-    margin-bottom: 4rem;
+    font-size: 1.9rem;
+    font-weight: 1000;
+    margin-bottom: 3.5rem;
     /* margin-right: auto; */
     font-family: 'Encode Sans', sans-serif;
 }
+
+.accordion-header button {
+    font-size: 17px !important;
+    font-weight: 500 !important;
+}
+
 .gradient {
     background: linear-gradient(
         -45deg,
@@ -126,9 +141,9 @@ h3 {
 }
 
 
-#contactos {
-    margin-right: 22rem;
-}
+/* #contactos {
+    margin-right: 18rem;
+} */
 
 #cards-margin {
     margin-top: 0%;
@@ -146,10 +161,10 @@ h3 {
     border-width: 2px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 18rem;
-    height: 27rem;
+    height: 26rem;
     margin-top: 25px;
     margin: auto; 
-    margin-bottom: 20px
+    margin-bottom: 28px
 }
 
 .border-card:hover {
@@ -177,7 +192,13 @@ h3 {
 #services-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: white;
+    /* height: 25.5rem; */
 }
+/* #tab-content tab-pane {
+    display: flex;
+    align-items: flex-start;
+
+} */
 
 .carousel-img img {
     border-radius: 7px;
@@ -284,23 +305,23 @@ h3 {
 @media screen and (max-width:390px) {
     .holderCircle {
         display: block;
-        transform: scale(0.68);
-        left: -75px;
+        transform: scale(0.699);
+        left: -79px;
     }
 }
 
 @media screen and (max-width:365px) {
     .holderCircle {
         display: block;
-        transform: scale(0.65);
-        left: -85px;
+        transform: scale(0.67);
+        left: -89px;
     }
 }
 @media screen and (max-width:340px) {
     .holderCircle {
         display: block;
-        transform: scale(0.62);
-        left: -100px;
+        transform: scale(0.64);
+        left: -105px;
     }
 }
 
@@ -356,9 +377,9 @@ ul {
     margin: 0px;
     padding: 0px;
 }
-ul li {
+/* ul li {
     list-style: none;
-}
+} */
 ul li a {
     text-decoration: none;
     color: #333333;
@@ -366,3 +387,4 @@ ul li a {
     margin: 8px 0px;
     display: block;
 }
+
