@@ -1,840 +1,1421 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
     <!-- BOOTSTRAP ICONS-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <script src="https://kit.fontawesome.com/a9722ef2fd.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a9722ef2fd.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <!-- SERVICES CIRCLE -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script> -->
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="/img/logos/birrete.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="/img/logos/birrete.png"
+      type="image/x-icon"
+    />
     <title>Te hacemos la tarea 🥳!</title>
-</head>
-<body class="bg-light">
-
+  </head>
+  <body class="bg-light">
     <!-- NAVIGATION BAR -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container-fluid">
-            <span id="logo-container"><img id="logo" src="/img/TELETAREAS_texto.png" alt="logo"></span>
-            <!-- <i class="fas fa-graduation-cap fa-2x"></i> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <!-- <li class="nav-item">
+      <div class="container-fluid">
+        <span id="logo-container"
+          ><img id="logo" src="/img/TELETAREAS_texto.png" alt="logo"
+        /></span>
+        <!-- <i class="fas fa-graduation-cap fa-2x"></i> -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-door-fill "></i>Bienvenido</a>
                     </li> -->
-                    <li class="nav-item" style="min-width: 10.5rem;">
-                        <a class="nav-link" href="#cards-margin"><i class="bi bi-question-circle-fill"></i>Cómo trabajamos</a>
-                    </li>
-                    <li class="nav-item dropdown" style="min-width: 7rem;">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Mira los servicios que ofrecemos para ayudarte">
-                            <i class="bi bi-pencil-fill"></i>Servicios
-                        </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Tareas</a></li>
-                                <li><a class="dropdown-item" href="#">Tésis</a></li>
-                                <li><a class="dropdown-item" href="#">Asesorías</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#"><i class="bi bi-whatsapp"></i>0999534685</a></li>
-                            </ul>
-                    </li>
-                
-                    <li class="nav-item" style="min-width: 7rem;">
-                            <a class="nav-link" id="contactos" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Escribenos a nuestro correo"><i class="bi bi-envelope-open-fill" ></i>Contactos</a>
-                    </li>
-                </ul>
-                <!-- OUTSIDE MAIN NAV -->
-                <ul class="navbar-nav justify-content-end">  
-                    <li class="nav-item">
-                        <a  class="nav-link" href="https://www.instagram.com/teletareas.xyz" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Compartir"><i class="fab fa-instagram fa-2x"></i></a>
-                    </li>
-                    <li class="nav-item"">
-                        <a class="nav-link" href="https://www.facebook.com/teletareas.xyz" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Compartir"><i class="fab fa-facebook fa-2x"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.twitter.com/@teletareas" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Compartir"><i class="fab fa-twitter fa-2x"></i></a>
-                    </li>
-                </ul> 
-                <!-- OUTSIDE MAIN NAV -->
-                <!-- SEARCH BAR -->
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 12rem;">
-                    <button class="btn btn-outline-primary" type="submit">Buscar</button>
-                </form>
-                <!-- SEARCH BAR -->
-            </div>
+            <li class="nav-item" style="min-width: 10.5rem">
+              <a class="nav-link" href="#cards-margin"
+                ><i class="bi bi-question-circle-fill"></i>Cómo trabajamos</a
+              >
+            </li>
+            <li class="nav-item dropdown" style="min-width: 7rem">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Mira los servicios que ofrecemos para ayudarte"
+              >
+                <i class="bi bi-pencil-fill"></i>Servicios
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Tareas</a></li>
+                <li><a class="dropdown-item" href="#">Tésis</a></li>
+                <li><a class="dropdown-item" href="#">Asesorías</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="bi bi-whatsapp"></i>0999534685</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item" style="min-width: 7rem">
+              <a
+                class="nav-link"
+                id="contactos"
+                href="#"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Escribenos a nuestro correo"
+                ><i class="bi bi-envelope-open-fill"></i>Contactos</a
+              >
+            </li>
+          </ul>
+          <!-- OUTSIDE MAIN NAV -->
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.instagram.com/teletareas.xyz"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Compartir"
+                ><i class="fab fa-instagram fa-2x"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.facebook.com/teletareas.xyz"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Compartir"
+                ><i class="fab fa-facebook fa-2x"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.twitter.com/@teletareas"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Compartir"
+                ><i class="fab fa-twitter fa-2x"></i
+              ></a>
+            </li>
+          </ul>
+          <!-- OUTSIDE MAIN NAV -->
+          <!-- SEARCH BAR -->
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              style="width: 12rem"
+            />
+            <button class="btn btn-outline-primary" type="submit">
+              Buscar
+            </button>
+          </form>
+          <!-- SEARCH BAR -->
         </div>
+      </div>
     </nav>
     <!-- NAVIGATION BAR -->
 
     <!-- HEADER -->
     <header class="gradient">
-        <div class="container">
-              <div class="row align-itms-center justify-content-center">
-                  <div class="col-md-5 align-self-center mx-md-auto">
-                        <main>
-                            <h1>Teletareas para tí<br></h1>
-                            <p class="text1">
-                            Te gustaría mejorar tus calificaciones y no sabes como lograrlo?<br>
-                            Nuestro equipo de talentosos profesionales te ayudará en aquellas tareas que se te dificultan.
-                            Disfruta de tu tiempo para hacer otras actividades.
-                            Empieza hoy mismo a obtener un mejor rendimiento académico!
-                            </p>
-                        </main>
-                        <!--Whatsapp Chat bubble-->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-8" id="whatsapp">
-                                    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-                                    <div class="elfsight-app-da9a1c63-e73b-4edf-bc92-e4bd1a3a7976" ></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Whatsapp Chat bubble-->
-                    </div>
-                 <!-- CARROUSEL -->
-                    <div class="col-md-5 ">
-                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" >
-                            <div class="carousel-inner" style="border-radius: 20%;">
-                                <div class="carousel-item active" data-bs-interval="15000">
-                                    <img src="/img/Online learning_01.gif" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="15000">
-                                    <img src="/img/Learning_02.gif" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="15000">
-                                    <img src="/img/Learning.gif" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="20000">
-                                    <img src="/img/Kids Studying from Home_02.gif" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="15000">
-                                    <img src="/img/Online learning_03.gif" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="15000">
-                                    <img src="/img/Kids Studying from Home_01.gif" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="15000">
-                                    <img src="/img/Learning_03.gif" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="15000">
-                                    <img src="/img/Kids Studying from Home_03.gif" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="15000">
-                                    <img src="/img/Studying_02.gif" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="15000">
-                                    <img src="/img/Online learning_04.gif" class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item" data-bs-interval="15000">
-                                    <img src="/img/Studying_01.gif" class="d-block w-100" alt="...">
-                                </div>
-                                <!-- <div class="carousel-item" data-bs-interval="15000">
+      <div class="container">
+        <div class="row align-itms-center justify-content-center">
+          <div class="col-md-5 align-self-center mx-md-auto">
+            <main>
+              <h1>Teletareas para tí<br /></h1>
+              <p class="text1">
+                Te gustaría mejorar tus calificaciones y no sabes como
+                lograrlo?<br />
+                Nuestro equipo de talentosos profesionales te ayudará en
+                aquellas tareas que se te dificultan. Disfruta de tu tiempo para
+                hacer otras actividades. Empieza hoy mismo a obtener un mejor
+                rendimiento académico!
+              </p>
+            </main>
+            <!--Whatsapp Chat bubble-->
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8" id="whatsapp">
+                  <script
+                    src="https://apps.elfsight.com/p/platform.js"
+                    defer
+                  ></script>
+                  <div
+                    class="elfsight-app-da9a1c63-e73b-4edf-bc92-e4bd1a3a7976"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <!--Whatsapp Chat bubble-->
+          </div>
+          <!-- CARROUSEL -->
+          <div class="col-md-5">
+            <div
+              id="carouselExampleSlidesOnly"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner" style="border-radius: 20%">
+                <div class="carousel-item active" data-bs-interval="15000">
+                  <img
+                    src="/img/Online learning_01.gif"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="15000">
+                  <img
+                    src="/img/Learning_02.gif"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="15000">
+                  <img
+                    src="/img/Learning.gif"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="20000">
+                  <img
+                    src="/img/Kids Studying from Home_02.gif"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="15000">
+                  <img
+                    src="/img/Online learning_03.gif"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="15000">
+                  <img
+                    src="/img/Kids Studying from Home_01.gif"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="15000">
+                  <img
+                    src="/img/Learning_03.gif"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="15000">
+                  <img
+                    src="/img/Kids Studying from Home_03.gif"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="15000">
+                  <img
+                    src="/img/Studying_02.gif"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="15000">
+                  <img
+                    src="/img/Online learning_04.gif"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="15000">
+                  <img
+                    src="/img/Studying_01.gif"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <!-- <div class="carousel-item" data-bs-interval="15000">
                                     <img src="/img/Online learning_02.gif" class="d-block w-100" alt="...">
                                 </div> -->
-                            </div>
-                        </div>
-                    </div>
-                 <!-- CARROUSEL -->
-                </div>
-        </div>
-
-        <!-- BOX QUOTE -->
-        <div class="container" id="quote-box">
-            <div class="row justify-content-center">
-                <div class="col-md-5">
-                    <div id="quote"></div>
-                    <div id="celebrity"></div>
-                </div>
+              </div>
             </div>
+          </div>
+          <!-- CARROUSEL -->
         </div>
-        <!-- BOX QUOTE -->
+      </div>
 
-        <!-- SVG HAS TO BE OUTSIDE CONTAINER!! -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f8f9fa" fill-opacity="1" d="M0,128L48,117.3C96,107,192,85,288,106.7C384,128,480,192,576,213.3C672,235,768,213,864,170.7C960,128,1056,64,1152,48C1248,32,1344,64,1392,80L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+      <!-- BOX QUOTE -->
+      <div class="container" id="quote-box">
+        <div class="row justify-content-center">
+          <div class="col-md-5">
+            <div id="quote"></div>
+            <div id="celebrity"></div>
+          </div>
+        </div>
+      </div>
+      <!-- BOX QUOTE -->
+
+      <!-- SVG HAS TO BE OUTSIDE CONTAINER!! -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#f8f9fa"
+          fill-opacity="1"
+          d="M0,128L48,117.3C96,107,192,85,288,106.7C384,128,480,192,576,213.3C672,235,768,213,864,170.7C960,128,1056,64,1152,48C1248,32,1344,64,1392,80L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
     </header>
     <!-- HEADER -->
 
     <!-- SECTION1 HOW WE WORK-->
-    <section class="sections bg-light" style="margin-bottom: 15px;">
-            <div class="container" style="margin:auto;">
-                <h2>Cómo trabajamos ?</h2>
-                <div class="row justify-content-between id="cards-margin">
-                    <div class="col-md">
-                        <div class="card border-card">
-                            <div class="card-header">1. Chatéanos</div>
-                            <img src="/img/Chat bot.gif" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Somos Profesionales!</h5>
-                                <p class="card-text">
-                                    Cotiza el valor de tu tarea. Para cada asignatura tenemos un 
-                                    grupo de profesionales listos para ayudarte.
-                                </p>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="card border-card">
-                            <div class="card-header">2. Agenda</div>
-                            <img src="/img/Online calendar.gif" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Tu tarea a tiempo!</h5>
-                                <p class="card-text">
-                                    Tan sólo dinos para cuando la necesitas y estará lista 
-                                    sin menor contratiempo.
-                                </p>
-                            </div>
-                          </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="card border-card">
-                            <div class="card-header">3. Recibe</div>
-                            <img src="/img/Online transactions.gif" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">100% Confiables!</h5>
-                                <p class="card-text">
-                                    Tu tarea lista y en tus manos una vez hecho el pago, 
-                                    trabajamos con varias plataformas electrónicas.</p>
-                            </div>
-                          </div>
-                    </div>
-                </div>
+    <section class="sections bg-light" style="margin-bottom: 15px">
+      <div class="container" style="margin: auto">
+        <h2>Cómo trabajamos ?</h2>
+        <div class="row justify-content-between id="cards-margin">
+        <div class="col-md">
+          <div class="card border-card">
+            <div class="card-header">1. Chatéanos</div>
+            <img src="/img/Chat bot.gif" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Somos Profesionales!</h5>
+              <p class="card-text">
+                Cotiza el valor de tu tarea. Para cada asignatura tenemos un
+                grupo de profesionales listos para ayudarte.
+              </p>
             </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card border-card">
+            <div class="card-header">2. Agenda</div>
+            <img
+              src="/img/Online calendar.gif"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Tu tarea a tiempo!</h5>
+              <p class="card-text">
+                Tan sólo dinos para cuando la necesitas y estará lista sin menor
+                contratiempo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card border-card">
+            <div class="card-header">3. Recibe</div>
+            <img
+              src="/img/Online transactions.gif"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">100% Confiables!</h5>
+              <p class="card-text">
+                Tu tarea lista y en tus manos una vez hecho el pago, trabajamos
+                con varias plataformas electrónicas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- SECTION1 HOW WE WORK-->
 
     <!-- SECTION2 WHY USE TELETAREAS-->
     <section class="gradient1">
-            <!-- CURVY SVG -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f8f9fa" fill-opacity="1" d="M0,160L48,160C96,160,192,160,288,144C384,128,480,96,576,122.7C672,149,768,235,864,245.3C960,256,1056,192,1152,160C1248,128,1344,128,1392,128L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7 align-self-center">
-                        <h3>Por qué usar Teletareas.xyz?</h3>
-                    </div>
-                    <div class="col-md-1"></div>
-            
+      <!-- CURVY SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#f8f9fa"
+          fill-opacity="1"
+          d="M0,160L48,160C96,160,192,160,288,144C384,128,480,96,576,122.7C672,149,768,235,864,245.3C960,256,1056,192,1152,160C1248,128,1344,128,1392,128L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 align-self-center">
+            <h3>Por qué usar Teletareas.xyz?</h3>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+          <!-- CARROUSEL OF PERSONS -->
+          <div class="col-md-7 align-self-auto">
+            <div
+              id="carouselExampleCaptions"
+              class="carousel carousel-dark slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="4"
+                  aria-label="Slide 5"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="5"
+                  aria-label="Slide 6"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="6"
+                  aria-label="Slide 7"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="7"
+                  aria-label="Slide 8"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="8"
+                  aria-label="Slide 9"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="9"
+                  aria-label="Slide 10"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="10"
+                  aria-label="Slide 11"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="11"
+                  aria-label="Slide 12"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="12"
+                  aria-label="Slide 13"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="13"
+                  aria-label="Slide 14"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="14"
+                  aria-label="Slide 15"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="15"
+                  aria-label="Slide 16"
+                ></button>
+              </div>
+              <div class="carousel-inner" style="margin-bottom: 30px">
+                <div class="carousel-item active carousel-img">
+                  <img
+                    src="/img/mathematics_01.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    class="img-students"
+                  />
+                  <div class="carousel-caption d-none d-md-block"></div>
                 </div>
-                <div class="row">
-                    <!-- CARROUSEL OF PERSONS -->
-                    <div class="col-md-7 align-self-auto">
-                        <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11" aria-label="Slide 12"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="12" aria-label="Slide 13"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="13" aria-label="Slide 14"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="14" aria-label="Slide 15"></button>
-                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="15" aria-label="Slide 16"></button>
-                            </div>
-                            <div class="carousel-inner" style="margin-bottom: 30px;">
-                                <div class="carousel-item active carousel-img">
-                                    <img src="/img/mathematics_01.jpg" class="d-block w-100" alt="..." class="img-students">
-                                    <div class="carousel-caption d-none d-md-block">
-                                    </div>
-                                </div>
-                                <div class="carousel-item carousel-img">
-                                    <img src="/img/mathematics_02.jpg" class="d-block w-100" alt="..." class="img-students">
-                                    <div class="carousel-caption d-none d-md-block">
-                                    </div>
-                                </div>
-                                <div class="carousel-item carousel-img">
-                                    <img src="/img/student_struggling_02.jpg" class="d-block w-100" alt="..." class="img-students">
-                                    <div class="carousel-caption d-none d-md-block">
-                                    </div>
-                                </div>
-                                <div class="carousel-item carousel-img">
-                                    <img src="/img/student_struggling_01.jpg" class="d-block w-100" alt="..." class="img-students">
-                                    <div class="carousel-caption d-none d-md-block">
-                                    </div>
-                                </div>
-                                <div class="carousel-item carousel-img">
-                                    <img src="/img/engineering_01.jpg" class="d-block w-100" alt="..." class="img-students">
-                                    <div class="carousel-caption d-none d-md-block">
-                                    </div>
-                                </div>
-                                <div class="carousel-item carousel-img">
-                                    <img src="/img/student_struggling_04.jpg" class="d-block w-100" alt="..." class="img-students">
-                                    <div class="carousel-caption d-none d-md-block">
-                                    </div>
-                                </div>
-                                <div class="carousel-item carousel-img">
-                                    <img src="/img/chemistry.jpg" class="d-block w-100" alt="..." class="img-students">
-                                    <div class="carousel-caption d-none d-md-block">
-                                    </div>
-                                </div>
-                                <div class="carousel-item carousel-img">
-                                    <img src="/img/mathematics_05.jpg" class="d-block w-100" alt="..." class="img-students">
-                                    <div class="carousel-caption d-none d-md-block">
-                                    </div>
-                                </div>
-                                <div class="carousel-item carousel-img">
-                                    <img src="/img/mathematics_04.jpg" class="d-block w-100" alt="..." class="img-students">
-                                    <div class="carousel-caption d-none d-md-block">
-                                    </div>
-                                </div>
-                                <div class="carousel-item carousel-img">
-                                    <img src="/img/mathematics_03.jpg" class="d-block w-100" alt="..." class="img-students">
-                                    <div class="carousel-caption d-none d-md-block">
-                                    </div>
-                                </div>
-                                <div class="carousel-item carousel-img">
-                                    <img src="/img/chemistry_03.jpg" class="d-block w-100" alt="..." class="img-students">
-                                    <div class="carousel-caption d-none d-md-block">
-                                    </div>
-                                </div>
-                                <div class="carousel-item carousel-img">
-                                    <img src="/img/online_education_01.jpg" class="d-block w-100" alt="..." class="img-students">
-                                    <div class="carousel-caption d-none d-md-block">
-                                    </div>
-                                </div>
-                                <div class="carousel-item carousel-img">
-                                    <img src="/img/online_education_02.jpg" class="d-block w-100" alt="..." class="img-students">
-                                    <div class="carousel-caption d-none d-md-block">
-                                    </div>
-                                </div>
-                                <div class="carousel-item carousel-img">
-                                    <img src="/img/online_education_03.jpg" class="d-block w-100" alt="..." class="img-students">
-                                    <div class="carousel-caption d-none d-md-block">
-                                    </div>
-                                </div>
-                                <div class="carousel-item carousel-img">
-                                    <img src="/img/online_education_04.jpg" class="d-block w-100" alt="..." class="img-students">
-                                    <div class="carousel-caption d-none d-md-block">
-                                    </div>
-                                </div>
-                                <div class="carousel-item carousel-img">
-                                    <img src="/img/online_education_05.jpg" class="d-block w-100" alt="..." class="img-students">
-                                    <div class="carousel-caption d-none d-md-block">
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- CARROUSEL OF PERSONS -->
-
-                    <div class="col-md-1"></div>
-                    
-                    <!-- TEXT CAROUSEL -->
-                    <div class="col-md-4">
-                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner ">
-                              <div class="carousel-item active" data-bs-interval="25000">
-                                    <h4>Consigue la Excelencia!</h4>
-                                    <p class="text1">
-                                        Nosotros tenemos una precisa y bien argumentada respuesta a cada problema, ejercicio o tarea.
-                                        <i>Obtén las mejores calificaciones</i>, sé el primero de tu clase, sácale provecho a tu tiempo!
-                                    </p>
-                                    <p class="text1"> Con nuestra
-                                        asistencia y dedicación podrás sacar las mejores calificaciones. Déja tu tarea a nuestro grupo de expertos,
-                                        tenemos un selecto equipo de profesionales que se encargarán de hacerla por tí.
-                                    </p>
-                              </div>
-                              <div class="carousel-item" data-bs-interval="20000">
-                                <h4>Ciencias y tecnología!</h4>
-                                <p class="text1">
-                                    Nuestro equipo combina una fuerte experiencia académica con ilimitada creatividad para hacer de tus ensayos, 
-                                    tareas, proyectos y tésis algo verdaderamente único. Tenemos una amplia experiencia para resolver tareas de algebra lineal,
-                                    cálculo I, cálculo II, equaciones diferenciales, física I, física II, electrodinámica, química etc.
-                                </p>
-                              </div>
-                              <div class="carousel-item" data-bs-interval="20000">
-                                  <h4>Responsabilidad y compromiso</h4>
-                                  <P class="text1">
-                                      No sólo te ayudamos a mejorar tus calificaciones, sino tambien ayudamos a ahorrar tu 
-                                      recurso más valioso: <i>tu tiempo</i>, para que puedas dedicarte a otras actividades que te apasionen. 
-                                    </P>
-                                    <p class="text1">
-                                        Tras cada tarea que realizamos, hay una persona que se encarga de verificar la consistencia, exactitud
-                                        del proceso lógico y cognitivo que lleva a la formulación de su resultado.
-                                    </p>
-                                </div>
-                                <div class="carousel-item" data-bs-interval="25000">
-                                  <h4>Recuerda!</h4>
-                                  <p class="text1">
-                                      Existen estudios que confirman lo que ya sospechábamos. 
-                                      Hacer tareas en exceso puede llegar a ser contrapruducente. 
-                                      El Dr. Richard Walker de la Facultad de Educación de la Universidad de Sydney, asegura que: 
-                                      “En los países en los que pasan más tiempo haciendo tareas, los logros son menores”.
-                                    </p>
-                                    <p class="text1">
-                                        Pero no te preocupes si estás demasiado agobiado con tu vida estudiantil. 
-                                        Haz llegado al lugar adecuado 😄!
-                                    </p>
-                                </div>
-                            </div>
-                          </div>
-                    </div>
-                    <!-- TEXT CAROUSEL -->
+                <div class="carousel-item carousel-img">
+                  <img
+                    src="/img/mathematics_02.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    class="img-students"
+                  />
+                  <div class="carousel-caption d-none d-md-block"></div>
                 </div>
+                <div class="carousel-item carousel-img">
+                  <img
+                    src="/img/student_struggling_02.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    class="img-students"
+                  />
+                  <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+                <div class="carousel-item carousel-img">
+                  <img
+                    src="/img/student_struggling_01.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    class="img-students"
+                  />
+                  <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+                <div class="carousel-item carousel-img">
+                  <img
+                    src="/img/engineering_01.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    class="img-students"
+                  />
+                  <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+                <div class="carousel-item carousel-img">
+                  <img
+                    src="/img/student_struggling_04.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    class="img-students"
+                  />
+                  <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+                <div class="carousel-item carousel-img">
+                  <img
+                    src="/img/chemistry.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    class="img-students"
+                  />
+                  <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+                <div class="carousel-item carousel-img">
+                  <img
+                    src="/img/mathematics_05.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    class="img-students"
+                  />
+                  <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+                <div class="carousel-item carousel-img">
+                  <img
+                    src="/img/mathematics_04.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    class="img-students"
+                  />
+                  <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+                <div class="carousel-item carousel-img">
+                  <img
+                    src="/img/mathematics_03.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    class="img-students"
+                  />
+                  <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+                <div class="carousel-item carousel-img">
+                  <img
+                    src="/img/chemistry_03.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    class="img-students"
+                  />
+                  <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+                <div class="carousel-item carousel-img">
+                  <img
+                    src="/img/online_education_01.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    class="img-students"
+                  />
+                  <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+                <div class="carousel-item carousel-img">
+                  <img
+                    src="/img/online_education_02.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    class="img-students"
+                  />
+                  <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+                <div class="carousel-item carousel-img">
+                  <img
+                    src="/img/online_education_03.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    class="img-students"
+                  />
+                  <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+                <div class="carousel-item carousel-img">
+                  <img
+                    src="/img/online_education_04.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    class="img-students"
+                  />
+                  <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+                <div class="carousel-item carousel-img">
+                  <img
+                    src="/img/online_education_05.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                    class="img-students"
+                  />
+                  <div class="carousel-caption d-none d-md-block"></div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <!-- SVG HAS TO BE OUTSIDE CONTAINER!! -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f8f9fa" fill-opacity="1" d="M0,32L48,53.3C96,75,192,117,288,122.7C384,128,480,96,576,101.3C672,107,768,149,864,149.3C960,149,1056,107,1152,80C1248,53,1344,43,1392,37.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+          </div>
+          <!-- CARROUSEL OF PERSONS -->
+
+          <div class="col-md-1"></div>
+
+          <!-- TEXT CAROUSEL -->
+          <div class="col-md-4">
+            <div
+              id="carouselExampleSlidesOnly"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="25000">
+                  <h4>Consigue la Excelencia!</h4>
+                  <p class="text1">
+                    Nosotros tenemos una precisa y bien argumentada respuesta a
+                    cada problema, ejercicio o tarea.
+                    <i>Obtén las mejores calificaciones</i>, sé el primero de tu
+                    clase, sácale provecho a tu tiempo!
+                  </p>
+                  <p class="text1">
+                    Con nuestra asistencia y dedicación podrás sacar las mejores
+                    calificaciones. Déja tu tarea a nuestro grupo de expertos,
+                    tenemos un selecto equipo de profesionales que se encargarán
+                    de hacerla por tí.
+                  </p>
+                </div>
+                <div class="carousel-item" data-bs-interval="20000">
+                  <h4>Ciencias y tecnología!</h4>
+                  <p class="text1">
+                    Nuestro equipo combina una fuerte experiencia académica con
+                    ilimitada creatividad para hacer de tus ensayos, tareas,
+                    proyectos y tésis algo verdaderamente único. Tenemos una
+                    amplia experiencia para resolver tareas de algebra lineal,
+                    cálculo I, cálculo II, equaciones diferenciales, física I,
+                    física II, electrodinámica, química etc.
+                  </p>
+                </div>
+                <div class="carousel-item" data-bs-interval="20000">
+                  <h4>Responsabilidad y compromiso</h4>
+                  <p class="text1">
+                    No sólo te ayudamos a mejorar tus calificaciones, sino
+                    tambien ayudamos a ahorrar tu recurso más valioso:
+                    <i>tu tiempo</i>, para que puedas dedicarte a otras
+                    actividades que te apasionen.
+                  </p>
+                  <p class="text1">
+                    Tras cada tarea que realizamos, hay una persona que se
+                    encarga de verificar la consistencia, exactitud del proceso
+                    lógico y cognitivo que lleva a la formulación de su
+                    resultado.
+                  </p>
+                </div>
+                <div class="carousel-item" data-bs-interval="25000">
+                  <h4>Recuerda!</h4>
+                  <p class="text1">
+                    Existen estudios que confirman lo que ya sospechábamos.
+                    Hacer tareas en exceso puede llegar a ser contrapruducente.
+                    El Dr. Richard Walker de la Facultad de Educación de la
+                    Universidad de Sydney, asegura que: “En los países en los
+                    que pasan más tiempo haciendo tareas, los logros son
+                    menores”.
+                  </p>
+                  <p class="text1">
+                    Pero no te preocupes si estás demasiado agobiado con tu vida
+                    estudiantil. Haz llegado al lugar adecuado 😄!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- TEXT CAROUSEL -->
+        </div>
+      </div>
+      <!-- SVG HAS TO BE OUTSIDE CONTAINER!! -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#f8f9fa"
+          fill-opacity="1"
+          d="M0,32L48,53.3C96,75,192,117,288,122.7C384,128,480,96,576,101.3C672,107,768,149,864,149.3C960,149,1056,107,1152,80C1248,53,1344,43,1392,37.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
     </section>
     <!-- SECTION2 WHY USE TELETAREAS-->
 
     <!-- OUR SERVICES -->
-    <div class="container bg-light sections" style="margin-bottom: -45px; margin-top: -20px;">
-            <!-- Heading -->
-        <div class="row">
-            <h2>Nuestros Servicios</h2>
-        </div>
-            <!-- Heading -->
+    <div
+      class="container bg-light sections"
+      style="margin-bottom: -45px; margin-top: -20px"
+    >
+      <!-- Heading -->
+      <div class="row">
+        <h2>Nuestros Servicios</h2>
+      </div>
+      <!-- Heading -->
 
-        <div class="row justify-content-center ">
-            <!-- TAB WITH OUR SERVICES -->
-            <div class="col-lg-3" style="max-width: 31rem; margin-bottom: 10px;">
-                 <!-- <h5 class="mb-3 mt-5">Choose Plan</h5> -->
-                <div id="services-card" class="choose-plan text-black p-3 float-left align-self-end">
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs bg-light" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-bs-toggle="tab" href="#basic" style="color: #7d4ac7;"><b>Tareas</b></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#standard" style="color: #7d4ac7;"><b>Tésis</b></a>
-                        </li>
-                    </ul>
+      <div class="row justify-content-center">
+        <!-- TAB WITH OUR SERVICES -->
+        <div class="col-lg-3" style="max-width: 31rem; margin-bottom: 10px">
+          <!-- <h5 class="mb-3 mt-5">Choose Plan</h5> -->
+          <div
+            id="services-card"
+            class="choose-plan text-black p-3 float-left align-self-end"
+          >
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs bg-light" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  data-bs-toggle="tab"
+                  href="#basic"
+                  style="color: #7d4ac7"
+                  ><b>Tareas</b></a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  href="#standard"
+                  style="color: #7d4ac7"
+                  ><b>Tésis</b></a
+                >
+              </li>
+            </ul>
 
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div id="basic" class="container tab-pane active">
-
-                                    <p class="mt-3">Convierte esas dudas  que tienes por no poder hacer tus tareas en excelentes calificaciones</p>
-                                    <hr>
-                                    <ul>
-                                        <li>Por número de páginas</li>
-                                        <li>Por nivel académico</li>
-                                        <li>Por urgencia o prioridad</li>
-                                        <li>Por tipo de materia o asignatura.</li>
-                                    </ul>
-                                    <hr />
-                                    <button class="btn btn-outline-primary float-right">Empezar</button>
-                                </div>
-                                <div id="standard" class="container tab-pane fade">
-                                    <p class="mt-3">Gradúate con una excelente  e interesante tésis, impresiona a tu jurado evaluador con una gran disertación  redactada por nuestros profesionales</p>
-                                    <hr>
-                                    <ul>
-                                        <li>Asesoría parcial o completa</li>
-                                        <li>Trabajo de investigación y redacción</li>
-                                    </ul>
-                                    <hr />
-                                    <button class="btn btn-outline-primary float-right">Empezar</button>
-                                </div>
-                            </div>
-                </div>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div id="basic" class="container tab-pane active">
+                <p class="mt-3">
+                  Convierte esas dudas que tienes por no poder hacer tus tareas
+                  en excelentes calificaciones
+                </p>
+                <hr />
+                <ul>
+                  <li>Por número de páginas</li>
+                  <li>Por nivel académico</li>
+                  <li>Por urgencia o prioridad</li>
+                  <li>Por tipo de materia o asignatura.</li>
+                </ul>
+                <hr />
+                <button class="btn btn-outline-primary float-right">
+                  Empezar
+                </button>
+              </div>
+              <div id="standard" class="container tab-pane fade">
+                <p class="mt-3">
+                  Gradúate con una excelente e interesante tésis, impresiona a
+                  tu jurado evaluador con una gran disertación redactada por
+                  nuestros profesionales
+                </p>
+                <hr />
+                <ul>
+                  <li>Asesoría parcial o completa</li>
+                  <li>Trabajo de investigación y redacción</li>
+                </ul>
+                <hr />
+                <button class="btn btn-outline-primary float-right">
+                  Empezar
+                </button>
+              </div>
             </div>
-            <!-- TAB WITH OUR SERVICES -->
-
-            <div class="col-lg-1"></div>
-        
-            <div class="col-lg-5">
-                <div class="holderCircle">
-                   <div class="round"></div>
-                   <div class="dotCircle">
-                      <span class="itemDot active itemDot1" data-tab="1">
-                        <i class="fas fa-square-root-alt fa-lg"></i>
-                      <span class="forActive"></span>
-                      </span>
-                      <span class="itemDot itemDot2" data-tab="2">
-                        <i class="fas fa-flask fa-lg"></i>
-                      <span class="forActive"></span>
-                      </span>
-                      <span class="itemDot itemDot3" data-tab="3">
-                      <i class="fas fa-atom fa-lg"></i>
-                      <span class="forActive"></span>
-                      </span>
-                      <span class="itemDot itemDot4" data-tab="4">
-                      <i class="fa fa-chart-line fa-lg"></i>
-                      <span class="forActive"></span>
-                      </span>
-                      <span class="itemDot itemDot5" data-tab="5">
-                      <i class="fas fa-laptop-code fa-lg"></i>
-                      <span class="forActive"></span>
-                      </span>
-                      <span class="itemDot itemDot6" data-tab="6">
-                        <i class="fas fa-stethoscope fa-lg"></i>
-                      <span class="forActive"></span>
-                      </span>
-                   </div>
-                   <!-- CIRCLE CONTENT -->
-                   <div class="contentCircle">
-                      <div class="CirItem title-box active CirItem1">
-                         <h2 class="title"><span>Matemáticas</span></h2>
-                         <p class="text-black-50">Teoría de conjuntos, geometría analítica, cálculo, álgebra, matrices, funciones, estadística, probabilidades, análisis, etc..</p>
-                         <i class="fas fa-square-root-alt fa-lg"></i>
-                      </div>
-                      <div class="CirItem title-box CirItem2">
-                         <h2 class="title"><span>Química</span></h2>
-                         <p class="text-black-50">Ingeniería Química, química orgánica e inorgánica, bioquímica, química física, ingeniería en minas, ingeniería industrial, etc..</p>
-                         <i class="fas fa-flask fa-lg"></i>
-                      </div>
-                      <div class="CirItem title-box CirItem3">
-                         <h2 class="title"><span>Física</span></h2>
-                         <p class="text-black-50">Mecánica, electrónica, física aplicada, física teorica, física computacional, series de Fourier, termodinámica, etc..</p>
-                         <i class="fas fa-atom fa-lg"></i>
-                      </div>
-                      <div class="CirItem title-box CirItem4">
-                         <h2 class="title"><span>Finanzas</span></h2>
-                         <p class="text-black-50">Contabilidad, economía, creación de empresas, logistica, marketing, ingeniería en comercio, ingenieria financiera, etc..</p>
-                         <i class="fa fa-chart-line fa-lg"></i>
-                      </div>
-                      <div class="CirItem title-box CirItem5">
-                         <h2 class="title"><span>Informática</span></h2>
-                         <p class="text-black-50">Ingeniería en sistemas e información, teoría de automatas, ingeniería de software, base de datos, programación, etc..</p>
-                         <i class="fas fa-laptop-code fa-lg"></i>
-                      </div>
-                      <div class="CirItem title-box CirItem6">
-                         <h2 class="title"><span>y muchas más..</span></h2>
-                         <p class="text-black-50">Medicina, administración de empresas, enfermeria, lenguaje, inglés, turismo, psicología, etc..</p>
-                         <i class="fas fa-stethoscope fa-lg"></i>
-                      </div>
-                   </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>   
+        <!-- TAB WITH OUR SERVICES -->
+
+        <div class="col-lg-1"></div>
+
+        <div class="col-lg-5">
+          <div class="holderCircle">
+            <div class="round"></div>
+            <div class="dotCircle">
+              <span class="itemDot active itemDot1" data-tab="1">
+                <i class="fas fa-square-root-alt fa-lg"></i>
+                <span class="forActive"></span>
+              </span>
+              <span class="itemDot itemDot2" data-tab="2">
+                <i class="fas fa-flask fa-lg"></i>
+                <span class="forActive"></span>
+              </span>
+              <span class="itemDot itemDot3" data-tab="3">
+                <i class="fas fa-atom fa-lg"></i>
+                <span class="forActive"></span>
+              </span>
+              <span class="itemDot itemDot4" data-tab="4">
+                <i class="fa fa-chart-line fa-lg"></i>
+                <span class="forActive"></span>
+              </span>
+              <span class="itemDot itemDot5" data-tab="5">
+                <i class="fas fa-laptop-code fa-lg"></i>
+                <span class="forActive"></span>
+              </span>
+              <span class="itemDot itemDot6" data-tab="6">
+                <i class="fas fa-stethoscope fa-lg"></i>
+                <span class="forActive"></span>
+              </span>
+            </div>
+            <!-- CIRCLE CONTENT -->
+            <div class="contentCircle">
+              <div class="CirItem title-box active CirItem1">
+                <h2 style="margin-bottom: 1rem" class="title">
+                  <span>Matemáticas</span>
+                </h2>
+                <p class="text-black-50">
+                  Teoría de conjuntos, geometría analítica, cálculo, álgebra,
+                  matrices, funciones, estadística, probabilidades, análisis,
+                  etc..
+                </p>
+                <i class="fas fa-square-root-alt fa-lg"></i>
+              </div>
+              <div class="CirItem title-box CirItem2">
+                <h2 style="margin-bottom: 1rem" class="title">
+                  <span>Química</span>
+                </h2>
+                <p class="text-black-50">
+                  Ingeniería Química, química orgánica e inorgánica, bioquímica,
+                  química física, ingeniería en minas, ingeniería industrial,
+                  etc..
+                </p>
+                <i class="fas fa-flask fa-lg"></i>
+              </div>
+              <div class="CirItem title-box CirItem3">
+                <h2 style="margin-bottom: 1rem" class="title">
+                  <span>Física</span>
+                </h2>
+                <p class="text-black-50">
+                  Mecánica, electrónica, física aplicada, física teorica, física
+                  computacional, series de Fourier, termodinámica, etc..
+                </p>
+                <i class="fas fa-atom fa-lg"></i>
+              </div>
+              <div class="CirItem title-box CirItem4">
+                <h2 style="margin-bottom: 1rem" class="title">
+                  <span>Finanzas</span>
+                </h2>
+                <p class="text-black-50">
+                  Contabilidad, economía, creación de empresas, logistica,
+                  marketing, ingeniería en comercio, ingenieria financiera,
+                  etc..
+                </p>
+                <i class="fa fa-chart-line fa-lg"></i>
+              </div>
+              <div class="CirItem title-box CirItem5">
+                <h2 style="margin-bottom: 1rem" class="title">
+                  <span>Informática</span>
+                </h2>
+                <p class="text-black-50">
+                  Ingeniería en sistemas e información, teoría de automatas,
+                  ingeniería de software, base de datos, programación, etc..
+                </p>
+                <i class="fas fa-laptop-code fa-lg"></i>
+              </div>
+              <div class="CirItem title-box CirItem6">
+                <h2 style="margin-bottom: 1rem" class="title">
+                  <span>y muchas más..</span>
+                </h2>
+                <p class="text-black-50">
+                  Medicina, administración de empresas, enfermeria, lenguaje,
+                  inglés, turismo, psicología, etc..
+                </p>
+                <i class="fas fa-stethoscope fa-lg"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- OUR SERVICES -->
 
     <!-- SECTION3 TEAM MEMBERS-->
-    <section class="gradient" style="margin-bottom: -10px;">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#f8f9fa" fill-opacity="1" d="M0,128L48,122.7C96,117,192,107,288,122.7C384,139,480,181,576,213.3C672,245,768,267,864,277.3C960,288,1056,288,1152,240C1248,192,1344,96,1392,48L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-                <div class="container" style="margin-top: 30px;">
-                        <div class="row justify-content-center">
-                            <div class="col-md-5">
-                                <h3 style="margin-top: 1.5rem;">Nuestro Equipo</h3>
-                            </div>
-                        </div>
-                            <div class="row text-center">
-                        
-                                <!-- Team item -->
-                                <div class="col-xl-3 col-sm-6 mb-5">
-                                    <div class="bg-light rounded shadow-sm py-5 px-4"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                                        <h5 class="mb-0">Manuella Nevoresky</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
-                                        <ul class="social mb-0 list-inline mt-3">
-                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
-                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
-                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
-                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div><!-- End -->
-                        
-                                <!-- Team item -->
-                                <div class="col-xl-3 col-sm-6 mb-5">
-                                    <div class="bg-light rounded shadow-sm py-5 px-4"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-2.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                                        <h5 class="mb-0">Samuel Hardy</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
-                                        <ul class="social mb-0 list-inline mt-3">
-                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
-                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
-                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
-                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div><!-- End -->
-                        
-                                <!-- Team item -->
-                                <div class="col-xl-3 col-sm-6 mb-5">
-                                    <div class="bg-light rounded shadow-sm py-5 px-4"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-1.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                                        <h5 class="mb-0">Tom Sunderland</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
-                                        <ul class="social mb-0 list-inline mt-3">
-                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
-                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
-                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
-                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div><!-- End -->
-                        
-                                <!-- Team item -->
-                                <div class="col-xl-3 col-sm-6 mb-5">
-                                    <div class="bg-light rounded shadow-sm py-5 px-4"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                                        <h5 class="mb-0">John Tarly</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
-                                        <ul class="social mb-0 list-inline mt-3">
-                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
-                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
-                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
-                                            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div><!-- End -->
-                            </div>
-                </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#f8f9fa" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,128C672,107,768,85,864,90.7C960,96,1056,128,1152,144C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <section class="gradient" style="margin-bottom: -10px">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#f8f9fa"
+          fill-opacity="1"
+          d="M0,128L48,122.7C96,117,192,107,288,122.7C384,139,480,181,576,213.3C672,245,768,267,864,277.3C960,288,1056,288,1152,240C1248,192,1344,96,1392,48L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
+      <div class="container" style="margin-top: 30px">
+        <div class="row justify-content-center">
+          <div class="col-md-5">
+            <h3 style="margin-top: 1.5rem">Nuestro Equipo</h3>
+          </div>
+        </div>
+        <div class="row text-center">
+          <!-- Team item -->
+          <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="bg-light rounded shadow-sm py-5 px-4">
+              <img
+                src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg"
+                alt=""
+                width="100"
+                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+              />
+              <h5 class="mb-0">Manuella Nevoresky</h5>
+              <span class="small text-uppercase text-muted">CEO - Founder</span>
+              <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item">
+                  <a href="#" class="social-link"
+                    ><i class="fa fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="social-link"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="social-link"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="social-link"
+                    ><i class="fa fa-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- End -->
+
+          <!-- Team item -->
+          <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="bg-light rounded shadow-sm py-5 px-4">
+              <img
+                src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-2.jpg"
+                alt=""
+                width="100"
+                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+              />
+              <h5 class="mb-0">Samuel Hardy</h5>
+              <span class="small text-uppercase text-muted">CEO - Founder</span>
+              <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item">
+                  <a href="#" class="social-link"
+                    ><i class="fa fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="social-link"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="social-link"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="social-link"
+                    ><i class="fa fa-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- End -->
+
+          <!-- Team item -->
+          <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="bg-light rounded shadow-sm py-5 px-4">
+              <img
+                src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-1.jpg"
+                alt=""
+                width="100"
+                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+              />
+              <h5 class="mb-0">Tom Sunderland</h5>
+              <span class="small text-uppercase text-muted">CEO - Founder</span>
+              <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item">
+                  <a href="#" class="social-link"
+                    ><i class="fa fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="social-link"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="social-link"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="social-link"
+                    ><i class="fa fa-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- End -->
+
+          <!-- Team item -->
+          <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="bg-light rounded shadow-sm py-5 px-4">
+              <img
+                src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg"
+                alt=""
+                width="100"
+                class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+              />
+              <h5 class="mb-0">John Tarly</h5>
+              <span class="small text-uppercase text-muted">CEO - Founder</span>
+              <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item">
+                  <a href="#" class="social-link"
+                    ><i class="fa fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="social-link"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="social-link"
+                    ><i class="fa fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="social-link"
+                    ><i class="fa fa-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- End -->
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#f8f9fa"
+          fill-opacity="1"
+          d="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,128C672,107,768,85,864,90.7C960,96,1056,128,1152,144C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
     </section>
     <!-- SECTION3 TEAM MEAMBERS-->
 
     <!-- FAQ -->
-    <section class="bg-light" style="margin-top: -10px; padding-top: 30px;">
-        <div class="container">
-            <div class="row">
-                <h2>Preguntas Frequentes</h2>
-            </div>
-            <div class="row justify-content-md-around mt-3">
-                <!-- FAQ -->
-                <div class="col-md-5" style="margin-bottom: 75px;">
-                            <div class="accordion accordion-flush" id="faqlist">
-                                <div class="accordion-item">
-                                    <h5 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
-                                        Con qué tipo de tareas nos pueden ayudar?
-                                        </button>
-                                    </h5>
-                                    <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                                        <div class="accordion-body">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                                        </div>
-                                    </div>
-                                </div>
-            
-                                <div class="accordion-item">
-                                    <h5 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
-                                        Nos pueden ayudar con exámenes?
-                                        </button>
-                                    </h5>
-                                    <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                                        <div class="accordion-body">
-                                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.
-                                        </div>
-                                    </div>
-                                </div>
-            
-                                <div class="accordion-item">
-                                    <h5 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
-                                        En qué formatos puedo enviar mi tarea?
-                                        </button>
-                                    </h5>
-                                    <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                                        <div class="accordion-body">
-                                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
-                                        </div>
-                                    </div>
-                                </div>
-            
-                                <div class="accordion-item">
-                                    <h5 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
-                                        En qué tiempo estará lista?
-                                        </button>
-                                    </h5>
-                                    <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                                        <div class="accordion-body">
-                                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
-                                        </div>
-                                    </div>
-                                </div>
-            
-                                <div class="accordion-item">
-                                    <h5 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
-                                        Como puedo realizar el pago?
-                                        </button>
-                                    </h5>
-                                    <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                                        <div class="accordion-body">
-                                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                </div>
-                <!-- FAQ -->
-
-                <!-- FORM -->
-                <div class="col-md-5">
-                    <h3 class="mb-4 fs-5 text-secondary text-uppercase">Contacta nos</h3>
-                    <form class="row g-3" 
-                        action="https://formsubmit.co/educacion@teletareas.xyz" method="post">
-
-                        <div class="col-md-6">
-                            <input type="hidden" name="_subject" value="Nuevo mensaje de teletareas.xyz!">
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_template" value="table">
-
-                            <label for="validationCustom01" class="form-label">Nombre:</label>
-                            <input 
-                                name='nombre-del-cliente'
-                                type="text" 
-                                class="form-control"
-                                id="validationCustom01" 
-                                placeholder="escribe tu nombre aquí"
-                                required
-                            />
-                            <!-- feedback -->
-                            <div class="invalid-feedback">
-                                Por favor escribe un nombre.
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <label for="validationCustomUsername" class="form-label">Email:</label>
-                            <div class="input-group">
-                                <span class="input-group-text" id="inputGroupPrepend">@</span>
-                                <input 
-                                name='correo-electronico'
-                                type="text" 
-                                class="form-control" 
-                                id="validationCustomUsername" 
-                                placeholder="tu@email.com" 
-                                aria-describedby="inputGroupPrepend" 
-                                required
-                                />
-                                <!-- feedback -->
-                                <div class="invalid-feedback">
-                                    Por favor escribe un correo.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <label class="form-label" for="text">Tu mensaje aquí:</label>
-                            <textarea 
-                                class="form-control" 
-                                name="mensaje" 
-                                id="text" 
-                                cols="" 
-                                rows="3"
-                                required>
-                            </textarea>
-                            <!-- feedback -->
-                            <div class="invalid-feedback">
-                                Por favor escribe un mensaje.
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="row-cols-md-1 mb-4">
-                                <label for="validationCustom03" class="form-label">Ciudad:</label>
-                                <input 
-                                    name="ciudad"
-                                    type="text"
-                                    class="form-control" 
-                                    id="validationCustom03" 
-                                    required 
-                                    placeholder="escribe tu ciudad"
-                                />
-                                <!-- feedback -->
-                                <div class="invalid-feedback">
-                                    Por favor escribe tu ciudad.
-                                </div>
-                            </div>
-                                
-                            <div class="row-cols-md-1 mb-3">
-                                <div class="form-check">
-                                    <label class="form-check-label" for="invalidCheck">
-                                    </label>
-                                    <input 
-                                    name="acepto terminos y condiciones"
-                                    class="form-check-input" 
-                                    type="checkbox" 
-                                    value="si" 
-                                    id="invalidCheck" 
-                                    required
-                                    />
-                                    <small> Estoy de acuerdo con términos y condiciones</small>
-                                    <!-- feedback -->
-                                    <div class="invalid-feedback">
-                                        Por favor acepte los terminos y condiciones para enviar su mensaje.
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- SEND BUTTON -->
-                            <div class="row-cols-md-2 mb-2">
-                                <button class="btn btn-primary" type="submit">Enviar</button>
-                            </div>
-                            </div>
-                        </form>
-                    </div>
-                <!-- FORM -->
-            </div>
+    <section class="bg-light" style="margin-top: -10px; padding-top: 30px">
+      <div class="container">
+        <div class="row">
+          <h2>Preguntas Frequentes</h2>
         </div>
+        <div class="row justify-content-md-around mt-3">
+          <!-- FAQ -->
+          <div class="col-md-5" style="margin-bottom: 75px">
+            <div class="accordion accordion-flush" id="faqlist">
+              <div class="accordion-item">
+                <h5 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-1"
+                  >
+                    Con qué tipo de tareas nos pueden ayudar?
+                  </button>
+                </h5>
+                <div
+                  id="faq-content-1"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqlist"
+                >
+                  <div class="accordion-body">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h5 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-2"
+                  >
+                    Nos pueden ayudar con exámenes?
+                  </button>
+                </h5>
+                <div
+                  id="faq-content-2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqlist"
+                >
+                  <div class="accordion-body">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsum is that it has a
+                    more-or-less normal distribution of letters, as opposed to
+                    using 'Content here.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h5 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-3"
+                  >
+                    En qué formatos puedo enviar mi tarea?
+                  </button>
+                </h5>
+                <div
+                  id="faq-content-3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqlist"
+                >
+                  <div class="accordion-body">
+                    Contrary to popular belief, Lorem Ipsum is not simply random
+                    text. It has roots in a piece of classical Latin literature
+                    from 45 BC, making it over 2000 years old.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h5 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-4"
+                  >
+                    En qué tiempo estará lista?
+                  </button>
+                </h5>
+                <div
+                  id="faq-content-4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqlist"
+                >
+                  <div class="accordion-body">
+                    Contrary to popular belief, Lorem Ipsum is not simply random
+                    text. It has roots in a piece of classical Latin literature
+                    from 45 BC, making it over 2000 years old.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h5 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-5"
+                  >
+                    Como puedo realizar el pago?
+                  </button>
+                </h5>
+                <div
+                  id="faq-content-5"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqlist"
+                >
+                  <div class="accordion-body">
+                    Contrary to popular belief, Lorem Ipsum is not simply random
+                    text. It has roots in a piece of classical Latin literature
+                    from 45 BC, making it over 2000 years old.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- FAQ -->
+
+          <!-- FORM -->
+          <div class="col-md-5">
+            <h3 class="mb-4 fs-5 text-secondary text-uppercase">
+              Contacta nos
+            </h3>
+            <form
+              class="row g-3"
+              action="https://formsubmit.co/educacion@teletareas.xyz"
+              method="post"
+            >
+              <div class="col-md-6">
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="Nuevo mensaje de teletareas.xyz!"
+                />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+
+                <label for="validationCustom01" class="form-label"
+                  >Nombre:</label
+                >
+                <input
+                  name="nombre-del-cliente"
+                  type="text"
+                  class="form-control"
+                  id="validationCustom01"
+                  placeholder="escribe tu nombre aquí"
+                  required
+                />
+                <!-- feedback -->
+                <div class="invalid-feedback">Por favor escribe un nombre.</div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="validationCustomUsername" class="form-label"
+                  >Email:</label
+                >
+                <div class="input-group">
+                  <span class="input-group-text" id="inputGroupPrepend">@</span>
+                  <input
+                    name="correo-electronico"
+                    type="text"
+                    class="form-control"
+                    id="validationCustomUsername"
+                    placeholder="tu@email.com"
+                    aria-describedby="inputGroupPrepend"
+                    required
+                  />
+                  <!-- feedback -->
+                  <div class="invalid-feedback">
+                    Por favor escribe un correo.
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label" for="text">Tu mensaje aquí:</label>
+                <textarea
+                  class="form-control"
+                  name="mensaje"
+                  id="text"
+                  cols=""
+                  rows="3"
+                  required
+                >
+                </textarea>
+                <!-- feedback -->
+                <div class="invalid-feedback">
+                  Por favor escribe un mensaje.
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="row-cols-md-1 mb-4">
+                  <label for="validationCustom03" class="form-label"
+                    >Ciudad:</label
+                  >
+                  <input
+                    name="ciudad"
+                    type="text"
+                    class="form-control"
+                    id="validationCustom03"
+                    required
+                    placeholder="escribe tu ciudad"
+                  />
+                  <!-- feedback -->
+                  <div class="invalid-feedback">
+                    Por favor escribe tu ciudad.
+                  </div>
+                </div>
+
+                <div class="row-cols-md-1 mb-3">
+                  <div class="form-check">
+                    <label class="form-check-label" for="invalidCheck"> </label>
+                    <input
+                      name="acepto terminos y condiciones"
+                      class="form-check-input"
+                      type="checkbox"
+                      value="si"
+                      id="invalidCheck"
+                      required
+                    />
+                    <small> Estoy de acuerdo con términos y condiciones</small>
+                    <!-- feedback -->
+                    <div class="invalid-feedback">
+                      Por favor acepte los terminos y condiciones para enviar su
+                      mensaje.
+                    </div>
+                  </div>
+                </div>
+                <!-- SEND BUTTON -->
+                <div class="row-cols-md-2 mb-2">
+                  <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- FORM -->
+        </div>
+      </div>
     </section>
     <!-- FAQ -->
 
-    <!-- CARROUSEL FROM SOCIAL MEDIA -->
-    <!-- <div class="container bg-light">
-        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-        <div class="elfsight-app-f0ca46a3-bcda-4d18-9d51-9de83705a4a3" class="bg-light"></div>
-    </div> -->
-    <!-- CARROUSEL FROM SOCIAL MEDIA -->
-
     <!-- FOOTER -->
     <footer>
-            <div  class="bg-light" style="margin-top: 140px;">
-                <div class="container">
-                    <div class="row justify-content-around">
-                        <div class="col-md-4">
-                            <div id="footer-ul">
-
-                                <div class="widget-title">
-                                    <h3 class="mb-4 fs-5 text-secondary text-uppercase">Customer support</h3>
-                                </div>
-                                <h4 class="text-success">+91-85580-30604</h4>
-                                <p class="text-secondary m-0 mt-3">Mon. - Fri. <b>10:00 - 7:00</b></p>
-                                <p class="text-secondary">Sat. - Sun. <b>Off</b></p>
-                                <div>
-                                    <i class="fab fa-facebook fa-2x" style="color: #1877f2;"></i>
-                                    <span id="instagram"><i class="fab fa-instagram fa-2x" style="color: #c13584"></i></span>
-                                    <i class="fab fa-twitter fa-2x" style="color: #1da1f2"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="widget-title">
-                                <h3 class="mb-4 fs-5 text-secondary text-uppercase">About Shop</h3>
-                            </div>
-                            <ul id="footer-ul">
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">Sitemap</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="widget-title">
-                                <h3 class="mb-4 fs-5 text-secondary text-uppercase">Our services</h3>
-                            </div>
-                            <ul id="footer-ul">
-                                <li><a href="#">Payment</a></li>
-                                <li><a href="#">Order tracking</a></li>
-                                <li><a href="#">Exchanges & returns</a></li>
-                                <li><a href="#">Delivery</a></li>
-                                <li><a href="#">Terms & conditions</a></li>
-                            </ul>
-                        </div>
-                        <!-- <div class="col-sm-6 col-md-3">
+      <div class="bg-light" style="margin-top: 140px">
+        <div class="container">
+          <div class="row justify-content-around">
+            <div class="col-md-4">
+              <div id="footer-ul">
+                <div class="widget-title">
+                  <h3 class="mb-4 fs-5 text-secondary text-uppercase">
+                    Customer support
+                  </h3>
+                </div>
+                <h4 class="text-success">+91-85580-30604</h4>
+                <p class="text-secondary m-0 mt-3">
+                  Mon. - Fri. <b>10:00 - 7:00</b>
+                </p>
+                <p class="text-secondary">Sat. - Sun. <b>Off</b></p>
+                <div>
+                  <i class="fab fa-facebook fa-2x" style="color: #1877f2"></i>
+                  <span id="instagram"
+                    ><i
+                      class="fab fa-instagram fa-2x"
+                      style="color: #c13584"
+                    ></i
+                  ></span>
+                  <i class="fab fa-twitter fa-2x" style="color: #1da1f2"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="widget-title">
+                <h3 class="mb-4 fs-5 text-secondary text-uppercase">
+                  About Shop
+                </h3>
+              </div>
+              <ul id="footer-ul">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Sitemap</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <div class="widget-title">
+                <h3 class="mb-4 fs-5 text-secondary text-uppercase">
+                  Our services
+                </h3>
+              </div>
+              <ul id="footer-ul">
+                <li><a href="#">Payment</a></li>
+                <li><a href="#">Order tracking</a></li>
+                <li><a href="#">Exchanges & returns</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="#">Terms & conditions</a></li>
+              </ul>
+            </div>
+            <!-- <div class="col-sm-6 col-md-3">
                             <div class="widget-title">
                                 <h3 class="mb-4 fs-5 text-secondary text-uppercase">Newsletter signup</h3>
                             </div>
@@ -851,26 +1432,48 @@
                                 </div>
                             </form>
                         </div> -->
-                    </div>
-                </div>
-                <!-- final gradient footer -->
-                <div class="col-12 gradient" style="text-align:center; padding-bottom: 20px; margin-top: 0px;">
-                    <svg id= xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f8f9fa" fill-opacity="1" d="M0,128L48,149.3C96,171,192,213,288,208C384,203,480,149,576,144C672,139,768,181,864,218.7C960,256,1056,288,1152,272C1248,256,1344,192,1392,160L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-                    <p>
-                        <a href="https://storyset.com/people">People illustrations by Storyset</a> <br>
-                        <a href="https://storyset.com/">Illustrations by Storyset</a><br>
-                        <a href="https://storyset.com/people">People illustrations by Storyset</a><br>
-                        <a href="https://storyset.com/online">Online illustrations by Storyset</a><br>
-                        <a href="https://storyset.com/education">Illustration by <em>Freepik Storyset</em></a>
-                    </p>
-                </div>
-            </div>
+          </div>
+        </div>
+        <!-- final gradient footer -->
+        <div
+          class="col-12 gradient"
+          style="text-align: center; padding-bottom: 20px; margin-top: 0px"
+        >
+          <svg id="xmlns" ="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#f8f9fa"
+              fill-opacity="1"
+              d="M0,128L48,149.3C96,171,192,213,288,208C384,203,480,149,576,144C672,139,768,181,864,218.7C960,256,1056,288,1152,272C1248,256,1344,192,1392,160L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+            ></path>
+          </svg>
+          <p>
+            <a href="https://storyset.com/people"
+              >People illustrations by Storyset</a
+            >
+            <br />
+            <a href="https://storyset.com/">Illustrations by Storyset</a><br />
+            <a href="https://storyset.com/people"
+              >People illustrations by Storyset</a
+            ><br />
+            <a href="https://storyset.com/online"
+              >Online illustrations by Storyset</a
+            ><br />
+            <a href="https://storyset.com/education"
+              >Illustration by <em>Freepik Storyset</em></a
+            >
+          </p>
+        </div>
+      </div>
     </footer>
     <!-- FOOTER -->
 
     <!-- JAVASCRIPT -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <script src="/main.js"></script>
     <!-- JAVASCRIPT -->
-</body>
+  </body>
 </html>
