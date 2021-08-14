@@ -22,7 +22,7 @@ const Celebrities = {
         [['Si quieres saber cómo es una persona, observa bien cómo trata a sus inferiores, no a sus colegas.'], ['(J.K. Rowling)']],
         [['Años de amor se han olvidado, en el odio de un minuto.'], ['(Edgar Allan Poe)']],
         [['El fracaso es el condimento que le da sabor al éxito.'], ['(Truman Capote)']],
-        [['La felicidad es beneficiosa para el cuerpo, pero es el dolor el que desarrolla el poder de la mente.'], [ '(Marcel Proust)']],
+        [['La felicidad es beneficiosa para el cuerpo, pero es el dolor el que desarrolla el poder de la mente.'], ['(Marcel Proust)']],
         [['La forma de hacer que las personas sean confiables es confiando en ellas.'], ['(Ernest Hemingway)']],
         [['La verdadera generosidad hacia el futuro radica en entregar todo al presente.'], ['(Albert Camus)']],
         [['El miedo es inevitable, debo aceptarlo, pero no puedo dejar que me paralice.'], ['(Isabel Allende)']],
@@ -46,9 +46,9 @@ const Celebrities = {
         [['Primero saltas del precipicio y luego construyes tus alas en la caída.'], ['(Ray Bradbury)']],
         [['El primer paso de la ignorancia es presumir de saber.'], ['(Baltasar Gracián)']],
     ],
-   
+
     'giveQuote': function randomQuote() {
-        let j = Math.floor(Math.random()*this.quotes.length)
+        let j = Math.floor(Math.random() * this.quotes.length)
         return [this.quotes[j][0], this.quotes[j][1]]
     }
 }
@@ -68,78 +68,78 @@ CELEBRITY.textContent = celebrity;
 
 // SERVICES
 
-let i=2;
+let i = 2;
 
-	
-$(document).ready(function(){
+
+$(document).ready(function () {
     var radius = 200;
     var fields = $('.itemDot');
     var container = $('.dotCircle');
     var width = container.width();
-radius = width/2.5;
+    radius = width / 2.5;
 
-     var height = container.height();
-    var angle = 0, step = (2*Math.PI) / fields.length;
-    fields.each(function() {
-        var x = Math.round(width/2 + radius * Math.cos(angle) - $(this).width()/2);
-        var y = Math.round(height/2 + radius * Math.sin(angle) - $(this).height()/2);
-        if(window.console) {
+    var height = container.height();
+    var angle = 0, step = (2 * Math.PI) / fields.length;
+    fields.each(function () {
+        var x = Math.round(width / 2 + radius * Math.cos(angle) - $(this).width() / 2);
+        var y = Math.round(height / 2 + radius * Math.sin(angle) - $(this).height() / 2);
+        if (window.console) {
             console.log($(this).text(), x, y);
         }
-        
+
         $(this).css({
             left: x + 'px',
             top: y + 'px'
         });
         angle += step;
     });
-    
-    
-    $('.itemDot').click(function(){
-        
-        var dataTab= $(this).data("tab");
+
+
+    $('.itemDot').click(function () {
+
+        var dataTab = $(this).data("tab");
         $('.itemDot').removeClass('active');
         $(this).addClass('active');
         $('.CirItem').removeClass('active');
-        $( '.CirItem'+ dataTab).addClass('active');
-        i=dataTab;
-        
+        $('.CirItem' + dataTab).addClass('active');
+        i = dataTab;
+
         $('.dotCircle').css({
-            "transform":"rotate("+(360-(i-1)*36)+"deg)",
-            "transition":"2s"
+            "transform": "rotate(" + (360 - (i - 1) * 36) + "deg)",
+            "transition": "2s"
         });
         $('.itemDot').css({
-            "transform":"rotate("+((i-1)*36)+"deg)",
-            "transition":"1s"
+            "transform": "rotate(" + ((i - 1) * 36) + "deg)",
+            "transition": "1s"
         });
-        
-        
+
+
     });
-    
-    setInterval(function(){
-        var dataTab= $('.itemDot.active').data("tab");
-        if(dataTab>6||i>6){
-        dataTab=1;
-        i=1;
+
+    setInterval(function () {
+        var dataTab = $('.itemDot.active').data("tab");
+        if (dataTab > 6 || i > 6) {
+            dataTab = 1;
+            i = 1;
         }
         $('.itemDot').removeClass('active');
-        $('[data-tab="'+i+'"]').addClass('active');
+        $('[data-tab="' + i + '"]').addClass('active');
         $('.CirItem').removeClass('active');
-        $( '.CirItem'+i).addClass('active');
+        $('.CirItem' + i).addClass('active');
         i++;
-        
-        
+
+
         $('.dotCircle').css({
-            "transform":"rotate("+(360-(i-2)*36)+"deg)",
-            "transition":"2s"
+            "transform": "rotate(" + (360 - (i - 2) * 36) + "deg)",
+            "transition": "2s"
         });
         $('.itemDot').css({
-            "transform":"rotate("+((i-2)*36)+"deg)",
-            "transition":"1s"
+            "transform": "rotate(" + ((i - 2) * 36) + "deg)",
+            "transition": "1s"
         });
-        
-        }, 6000);
-    
+
+    }, 6000);
+
 });
 
 
