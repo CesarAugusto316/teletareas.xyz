@@ -19,7 +19,7 @@ body {
 .navbar-nav li a {
   color: rgb(0, 234, 255) !important;
   font-family: "Montserrat", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 0;
@@ -495,7 +495,7 @@ h3 {
 }
 .accordion-button:not(.collapsed) {
   background: none;
-  color: #dc3545;
+  color: #a733bb;
 }
 .accordion-body {
   padding: 15px;
@@ -508,7 +508,7 @@ h3 {
   font-size: 40px;
   background-image: none;
   font-weight: 100;
-  color: #1b6ce5;
+  color: #a733bb;
   transform: translateY(-4px);
 }
 .accordion-button:not(.collapsed)::after {
@@ -527,7 +527,7 @@ h3 {
 .footer-ul {
   margin: 0px;
   padding: 0px;
-  margin-left: 50px;
+  margin-left: 25px;
   margin-bottom: 1.8rem;
 }
 
