@@ -2,3 +2,4 @@ FlexStart/
 virtual_Env/
 __pycache__/
 app/__pycache__
+.vscode/
