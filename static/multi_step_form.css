@@ -243,12 +243,38 @@ p {
 
 label {
   display: block;
-  font-size: 14.75px;
+  font-size: 14.70px;
 }
 
 table {
-  font-weight: 300;
+  font-weight: 200;
   color: #616161;
   line-height: 1.2;
-  font-size: 14.75px
+  font-size: 14.70px;
+  margin: 0 auto
+  /* column-span: 30px; */
+}
+
+table td:nth-child(2) {
+  text-align: end;
+  width: 5.5rem;
+  /* color: red; */
+}
+
+table td:nth-child(1) {
+  width: 8rem;
+}
+
+table tr:last-child {
+  margin-top: 1rem;
+  border-top: 2px solid darkgray;
+  line-height: 1.75;
+  /* font-size: 15.5px; */
+  color: red;
+}
+
+div.price{
+  border: 1.5px solid lightgray;
+  width: 16rem;
+  border-radius: 5px;
 }

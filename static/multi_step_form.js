@@ -80,8 +80,6 @@ $(document).ready(function () {
 });
 
 // 🔽 OUTPUTS 🔽
-const span_$niceMessage = document.querySelector("#nice-message");
-const output_$total = document.querySelector('output[name="total"]');
 
 // output_$total.textContent = paramater.value
 const difficulty = {
@@ -119,16 +117,18 @@ function urgency(time) {
 }
 
 //⭐⭐ FORM CONTROLS ⭐⭐
+// We should use localStorage
+const span_$niceMessage = document.querySelector("#nice-message");
+
 const form_$parameters = document.querySelectorAll("form#msform .parameter");
-// const input_$radios = document.querySelectorAll('input[type="radio"]')
-// When page loading this object should be created
-// and should have a method which should output the result
-const states = {
+const table_$column2 = document.querySelectorAll("table td:nth-child(2)");
+
+let states = {
   academic_level: "universidad",
   time: 24,
   page_quantity: "1",
   difficulty: "normal",
-  getFees: function () {
+  getTotal: function () {
     return (
       level[this.academic_level] *
       urgency(this.time) *
@@ -138,38 +138,47 @@ const states = {
   },
 };
 
-// window.addEventListener('load', () =>{
-//   for (let parameter of form_$parameters) {
-//       states[parameter.name] = parameter.value;
-//   }
-//   for (let parameter of input_$radios) {
-//     states[parameter.name] = parameter.value;
-// }
-//   console.log(states)
-//   console.log(states.getFees())
-// })
+// Object.defineProperty(states, "getTotal", { enumerable: false });
 
+function renderState(states) {
+  for (let i in Object.keys(table_$column2)) {
+    if (i == 4) {
+      continue;
+    } else if (i == 5) {
+      table_$column2[i].innerHTML = `$ ${states.getTotal()}`;
+    } else {
+      table_$column2[i].innerHTML = Object.values(states)[i];
+    }
+  }
+  localStorage.setItem("data", JSON.stringify(states));
+}
+
+window.addEventListener("load", () => {
+  if (localStorage.getItem("data")) {
+    states = JSON.parse(localStorage.getItem("data"));
+    states.getTotal = function () {
+      return (
+        level[this.academic_level] *
+        urgency(this.time) *
+        this.page_quantity *
+        difficulty[this.difficulty]
+      ).toFixed(2);
+    }
+    renderState(states);
+  } else {
+    return;
+  }
+});
 
 for (let parameter of form_$parameters) {
   parameter.addEventListener("input", () => {
     // console.log(parameter)
     if (states[parameter.name]) {
       states[parameter.name] = parameter.value;
+      renderState(states);
     }
-    console.log(states);
-    console.log(states.getFees());
   });
 }
-// for (let parameter of input_$radios) {
-//   parameter.addEventListener("input", () => {
-//     // console.log(parameter)
-//     if (states[parameter.name]) {
-//       states[parameter.name] = parameter.value;
-//     }
-//     console.log(states);
-//     console.log(states.getFees());
-//   });
-// }
 
 // don't forget to addEventListener when loading the page
 // now simply invoking a method over states, will give us the price
