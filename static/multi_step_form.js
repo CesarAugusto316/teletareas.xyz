@@ -81,8 +81,7 @@ $(document).ready(function () {
 
 // 🔽 OUTPUTS 🔽
 
-// output_$total.textContent = paramater.value
-const difficulty = {
+const difficulty_tax = {
   normal: 1.0,
   dificil: 1.18, //=> %15 if its difficult
 };
@@ -118,67 +117,74 @@ function urgency(time) {
 
 //⭐⭐ FORM CONTROLS ⭐⭐
 // We should use localStorage
-const span_$niceMessage = document.querySelector("#nice-message");
+let span_$niceMessage = document.querySelector("#nice-message");
+// const form_$parameters = document.querySelectorAll("form#msform .parameter");
+let table_$column2 = document.querySelectorAll("table td:nth-child(2)");
 
-const form_$parameters = document.querySelectorAll("form#msform .parameter");
-const table_$column2 = document.querySelectorAll("table td:nth-child(2)");
+let academic_level = document.querySelector('select[name="academic_level"]');
+let time = document.querySelector('select[name="time"]');
+let page_quantity = document.querySelector('input[name="page_quantity"]');
+let radio_buttons = document.querySelectorAll(
+  "input[type='radio'][name='difficulty']"
+);
+let difficulty = document.querySelector(
+  "input[type='radio'][name='difficulty']:checked"
+);
 
 let states = {
-  academic_level: "universidad",
-  time: 24,
-  page_quantity: "1",
-  difficulty: "normal",
+  academic_level: academic_level.value,
+  time: parseInt(time.value),
+  page_quantity: parseInt(page_quantity.value),
+  difficulty: difficulty.value,
   getTotal: function () {
     return (
       level[this.academic_level] *
       urgency(this.time) *
       this.page_quantity *
-      difficulty[this.difficulty]
+      difficulty_tax[this.difficulty]
     ).toFixed(2);
   },
 };
+Object.defineProperty(states, "getTotal", { enumerable: false });
 
-// Object.defineProperty(states, "getTotal", { enumerable: false });
-
-function renderState(states) {
-  for (let i in Object.keys(table_$column2)) {
-    if (i == 4) {
-      continue;
-    } else if (i == 5) {
-      table_$column2[i].innerHTML = `$ ${states.getTotal()}`;
-    } else {
-      table_$column2[i].innerHTML = Object.values(states)[i];
-    }
-  }
-  localStorage.setItem("data", JSON.stringify(states));
-}
-
-window.addEventListener("load", () => {
-  if (localStorage.getItem("data")) {
-    states = JSON.parse(localStorage.getItem("data"));
-    states.getTotal = function () {
-      return (
-        level[this.academic_level] *
-        urgency(this.time) *
-        this.page_quantity *
-        difficulty[this.difficulty]
-      ).toFixed(2);
-    }
-    renderState(states);
-  } else {
-    return;
-  }
+time.addEventListener("input", () => {
+  states["time"] = time.value;
+  renderState(states);
+});
+academic_level.addEventListener("input", () => {
+  states["academic_level"] = academic_level.value;
+  renderState(states);
+});
+page_quantity.addEventListener("input", () => {
+  states["page_quantity"] = page_quantity.value;
+  renderState(states);
 });
 
-for (let parameter of form_$parameters) {
-  parameter.addEventListener("input", () => {
-    // console.log(parameter)
-    if (states[parameter.name]) {
-      states[parameter.name] = parameter.value;
+for (let i of radio_buttons) {
+  i.addEventListener("input", () => {
+    if (i.checked) {
+      difficulty = i;
+      states["difficulty"] = difficulty.value;
       renderState(states);
     }
   });
 }
 
-// don't forget to addEventListener when loading the page
-// now simply invoking a method over states, will give us the price
+function renderState(x) {
+  for (let i = 0; i < table_$column2.length; i++) {
+    if (i == 4) {
+      continue;
+    } else if (i == 5) {
+      table_$column2[i].textContent = `$ ${states.getTotal()}`;
+    } else {
+      table_$column2[i].textContent = Array.from(Object.values(states))[i];
+    }
+  }
+  // localStorage.setItem("data", JSON.stringify(states));
+}
+
+window.addEventListener("load", () => {
+  renderState();
+});
+
+console.log(states.getTotal());
