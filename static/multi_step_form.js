@@ -80,17 +80,16 @@ $(document).ready(function () {
 });
 
 // 🔽 OUTPUTS 🔽
-
 const difficulty_tax = {
   normal: 1.0,
   dificil: 1.18, //=> %15 if its difficult
 };
 
 const level = {
-  escuela: 3,
-  colegio: 3.25,
-  universidad: 4,
-  posgrado: 5,
+  Escuela: 3,
+  Colegio: 3.25,
+  Universidad: 4,
+  Posgrado: 5,
 };
 
 function urgency(time) {
@@ -132,6 +131,7 @@ let difficulty = document.querySelector(
 );
 
 let states = {
+  //* Initializing our calulator */
   academic_level: academic_level.value,
   time: parseInt(time.value),
   page_quantity: parseInt(page_quantity.value),
@@ -144,7 +144,7 @@ let states = {
       difficulty_tax[this.difficulty]
     ).toFixed(2);
   },
-};
+};//! Excluding the getTotal method when iterating */
 Object.defineProperty(states, "getTotal", { enumerable: false });
 
 time.addEventListener("input", () => {
@@ -155,8 +155,11 @@ academic_level.addEventListener("input", () => {
   states["academic_level"] = academic_level.value;
   renderState(states);
 });
+let quantity = document.querySelector('label[for="pages"]')
 page_quantity.addEventListener("input", () => {
+  // console.log(quantity.innerHTML)
   states["page_quantity"] = page_quantity.value;
+  // quantity.textContent = `Páginas: ${states["page_quantity"]}`
   renderState(states);
 });
 
@@ -171,11 +174,16 @@ for (let i of radio_buttons) {
 }
 
 function renderState(x) {
+  quantity.textContent = `N° de páginas: ${states['page_quantity']} `
   for (let i = 0; i < table_$column2.length; i++) {
     if (i == 4) {
       continue;
     } else if (i == 5) {
       table_$column2[i].textContent = `$ ${states.getTotal()}`;
+    } else if (i == 1) {
+      table_$column2[i].textContent = `${
+        Array.from(Object.values(states))[i]
+      } horas`;
     } else {
       table_$column2[i].textContent = Array.from(Object.values(states))[i];
     }
@@ -188,3 +196,14 @@ window.addEventListener("load", () => {
 });
 
 console.log(states.getTotal());
+
+let err = page_quantity.parentElement;
+let message = document.createElement("div");
+message.style.fontSize = "11px";
+message.style.color = "#b2f";
+message.textContent = "No puede ser menor que 1";
+
+// err.innerHTML += message.outerHTML
+// console.log(err.innerHTML)
+
+// 🤑🤑

@@ -35,7 +35,7 @@
     <title>Te hacemos la tarea!</title>
   </head>
   <body class="gradient">
-    <!-- NAVIGATION BAR -->
+    <!--! NAVIGATION BAR -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container-fluid">
         <span id="logo-container"
@@ -152,14 +152,14 @@
         </div>
       </div>
     </nav>
-    <!-- NAVIGATION BAR -->
+    <!--! NAVIGATION BAR -->
 
-    <!-- CALCULATOR -->
-    <div class="container-fluid" style="margin-top: 5.5rem">
+    <!--! CALCULATOR -->
+    <div class="container-fluid" style="margin-top: 3.5rem">
       <div class="row justify-content-center align-items-start">
         <div class="col-md-6">
           <!-- MULTI STEP FORM -->
-          <div class="container-fluid">
+          <div class="container-fluid form-box">
             <div class="row justify-content-center">
               <div class="card p-3">
                 <h2 class="heading">Haz tu Orden!</h2>
@@ -190,6 +190,7 @@
                   <span id="nice-message"
                     >Elige de acuerdo a tu prioridad!</span
                   >
+                  <!--! SECTION: Calcular Tarifa -->
                   <fieldset>
                     <div class="form-card">
                       <div class="row">
@@ -202,12 +203,10 @@
                       </div>
                       <!-- Nivel educativo -->
                       <div class="row justify-content-center">
-                        <div class="col-sm-5" justify-content-center>
-                          <ol style="margin-bottom: 0">
+                        <div class="col justify-content-center">
+                          <ol class="tarifa-input">
                             <li>
-                              <label for="level"
-                                >Elige un nivel académico:</label
-                              >
+                              <label for="level">Nivel académico:</label>
                               <select
                                 id="level"
                                 name="academic_level"
@@ -216,12 +215,12 @@
                                 aria-label="Default select example"
                               >
                                 <!-- <option selected>Nivel educativo</option> -->
-                                <option value="escuela">Escuela</option>
-                                <option value="colegio">Colegio</option>
-                                <option value="universidad" selected>
+                                <option value="Escuela">Escuela</option>
+                                <option value="Colegio">Colegio</option>
+                                <option value="Universidad" selected>
                                   Universidad
                                 </option>
-                                <option value="posgrado">Posgrado</option>
+                                <option value="Posgrado">Posgrado</option>
                               </select>
                             </li>
                             <li>
@@ -247,95 +246,99 @@
                                 <option value="504">3 semanas</option>
                               </select>
                             </li>
+                          </ol> 
+
+                          <ol class="tarifa-input paginas">
                             <li>
-                              <label for="pages">Número de páginas?</label>
+                              <label for="pages">N° de páginas? </label>
                               <input
                                 class="parameter"
                                 required
-                                type="number"
+                                type="range"
                                 name="page_quantity"
                                 value="1"
                                 id="pages"
                                 min="1"
+                                max="80"
                               />
-                              <!-- <label for="customRange1" class="form-label">Example range</label> -->
-                              <!-- <input type="range" class="form-range" id="pages"> -->
                             </li>
-                          </ol>
-                        </div>
-                        <!-- <div class="col-sm-1"></div> -->
-                        <div class="col-sm-5">
-                          <ol start="4">
                             <li>
-                              <label>Dificultad de la tarea:</label>
-                            </li>
-                              <div class="form-check form-check-inline">
+                              <label>Dificultad:</label>
+
+                              <div class="form-check">
                                 <input
                                   type="radio"
                                   value="normal"
                                   class="form-check-input parameter"
                                   name="difficulty"
                                   id="normal"
-                                  checked
                                 />
                                 <label class="form-check-label" for="normal">
                                   Normal
                                 </label>
                               </div>
-                              <div class="form-check form-check-inline">
+                              <div class="form-check">
                                 <input
                                   type="radio"
                                   value="dificil"
                                   class="form-check-input parameter"
                                   name="difficulty"
                                   id="dificil"
+                                  checked
                                 />
                                 <label class="form-check-label" for="dificil">
                                   Difícil
                                 </label>
                               </div>
+                            </li>
                           </ol>
-                          <!-- <ul class="parameter radio-buttons">
-                                <li>
-                                </li>
-                              </ul> -->
+                        </div>
+
+                        <!--! Total -->
+                        <div class="col-md-6">
                           <div class="card price">
                             <h2
                               class="card-header heading"
-                              style="background-color: #eceff1; margin-bottom: 0;"
+                              style="
+                                background-color: #eceff1;
+                                margin-bottom: 0;
+                              "
                             >
                               Total
                             </h2>
                             <div class="card-body">
-                                <table>
-                                  <tr>
-                                    <td>Nivel académico:</td>
-                                    <td> _ _</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Tiempo de entrega:</td>
-                                    <td> _ _</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Nº de páginas:</td>
-                                    <td> 1</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Dificultad:</td>
-                                    <td>normal</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Descuento <span id="porcentage">(%)</span>:</td>
-                                    <td>  0</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Total:</td>
-                                    <td>$ _ _</td>
-                                  </tr>
-                                </table>
+                              <table class="output">
+                                <tr>
+                                  <td>Nivel académico:</td>
+                                  <td>_ _</td>
+                                </tr>
+                                <tr>
+                                  <td>Tiempo de entrega:</td>
+                                  <td>_ _</td>
+                                </tr>
+                                <tr>
+                                  <td>Nº de páginas:</td>
+                                  <td>1</td>
+                                </tr>
+                                <tr>
+                                  <td>Dificultad:</td>
+                                  <td>normal</td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    Descuento <span id="porcentage">(%)</span>:
+                                  </td>
+                                  <td>0</td>
+                                </tr>
+                                <tr>
+                                  <td>Total:</td>
+                                  <td>$ _ _</td>
+                                </tr>
+                              </table>
                             </div>
                           </div>
                         </div>
+                        <!--! Total -->
                       </div>
                     </div>
                     <input
@@ -346,6 +349,7 @@
                     />
                   </fieldset>
 
+                  <!--! SECTION: Subir Tarea -->
                   <fieldset>
                     <div class="form-card">
                       <div class="row">
@@ -356,29 +360,40 @@
                           <h2 class="steps">Paso 2 - 4</h2>
                         </div>
                       </div>
-                      <label class="fieldlabels">Sube un archivo:</label>
-                      <input type="file" name="pic" accept="image/*" />
-                      <label class="fieldlabels">Sube más:</label>
-                      <input type="file" name="pic" accept="image/*" />
+                      <br>
+                      <br>
+                      <div class="archivos">
+                        <label class="fieldlabels"><i class="fas fa-cloud-upload-alt"></i> Sube tu Tarea:</label>
+                        
+                        <input type="file" name="pic" accept="image/*" />
+                        <br />
+                        <br>
+                        <label class="fieldlabels"><i class="fas fa-cloud-upload-alt"></i> Sube más:</label>
+                        <input type="file" name="pic" accept="image/*" />
+                      </div>
                     </div>
+
+                    <br>
                     <input
                       type="button"
                       name="next"
                       class="next action-button"
-                      value="Submit"
+                      value="Continuar"
                     />
                     <input
                       type="button"
                       name="previous"
                       class="previous action-button-previous"
-                      value="Previous"
+                      value="Anterior"
                     />
                   </fieldset>
+
+                  <!--! SECTION: Metodo de Pago -->
                   <fieldset>
                     <div class="form-card">
                       <div class="row">
                         <div class="col-7">
-                          <h2 class="fs-title">Método de pago:</h2>
+                          <h3 class="fs-title">Método de pago:</h3>
                         </div>
                         <div class="col-5">
                           <h2 class="steps">Paso 3 - 4</h2>
@@ -386,8 +401,210 @@
                       </div>
                       <!-- METODOS DE PAGO -->
 
-                      <!-- METODOS DE PAGO -->
+                      <!--! PAYMENTS -->
+                      <div class="col">
+                        <!--* <div class="container py-5"> -->
+                        <div class="row">
+                          <div class="rounded-md shadow-sm p-3">
+                            <!-- Credit card form tabs -->
+                            <ul
+                              role="tablist"
+                              class="
+                                nav
+                                bg-light
+                                nav-pills
+                                rounded-pill
+                                nav-fill
+                                mb-3
+                              "
+                            >
+                            <!--? Tarjetas de Débito y Crédito  -->
+                              <!-- <li class="nav-item">
+                                <a
+                                  data-bs-toggle="pill"
+                                  href="#nav-tab-card"
+                                  class="nav-link rounded-pill"
+                                >
+                                  <i class="fa fa-credit-card"> </i>
+                                  Tarjeta
+                                </a>
+                              </li> -->
+                                
+                              <!--? Paypal  -->
+                              <li class="nav-item">
+                                <a
+                                  data-bs-toggle="pill"
+                                  href="#nav-tab-paypal"
+                                  class="nav-link rounded-pill active"
+                                >
+                                  <i class="fa fa-paypal"> </i>
+                                  Paypal
+                                </a>
+                              </li>
+                              <!--? Transferencia  -->
+                              <li class="nav-item">
+                                <a
+                                  data-bs-toggle="pill"
+                                  href="#nav-tab-bank"
+                                  class="nav-link rounded-pill"
+                                >
+                                  <i class="fa fa-university"> </i>
+                                  Transferencia
+                                </a>
+                              </li>
+                            </ul>
+                            <!-- pills end -->
+
+                            <!--! Payments-form content -->
+                            <div class="tab-content">
+                              <!-- credit card info-->
+                              <!-- <div
+                                id="nav-tab-card"
+                                class="tab-pane fade show active"
+                              >
+                                <p class="alert alert-success">
+                                  Some text success or error
+                                </p>
+                                <div class="form-group">
+                                  <label for="username"
+                                    >Full name (on the card)</label
+                                  >
+                                  <input
+                                    type="text"
+                                    name="username"
+                                    placeholder="Jason Doe"
+                                    required
+                                    class="form-control"
+                                  />
+                                </div>
+                                <div class="form-group">
+                                  <label for="cardNumber">Card number</label>
+                                  <div class="input-group">
+                                    <input
+                                      type="text"
+                                      name="cardNumber"
+                                      placeholder="Your card number"
+                                      class="form-control"
+                                      required
+                                    />
+                                    <div class="input-group-append">
+                                      <span class="input-group-text text-muted">
+                                        <i class="fa fa-cc-visa mx-1"></i>
+                                        <i class="fa fa-cc-amex mx-1"></i>
+                                        <i class="fa fa-cc-mastercard mx-1"></i>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-8">
+                                    <div class="form-group">
+                                      <label
+                                        ><span class="hidden-xs"
+                                          >Expiration</span
+                                        ></label
+                                      >
+                                      <div class="input-group">
+                                        <input
+                                          type="number"
+                                          placeholder="MM"
+                                          name=""
+                                          class="form-control"
+                                          required
+                                        />
+                                        <input
+                                          type="number"
+                                          placeholder="YY"
+                                          name=""
+                                          class="form-control"
+                                          required
+                                        />
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <div class="form-group mb-4">
+                                      <label
+                                        data-toggle="tooltip"
+                                        title="Three-digits code on the back of your card"
+                                        >CVV
+                                        <i class="fa fa-question-circle"></i>
+                                      </label>
+                                      <input
+                                        type="text"
+                                        required
+                                        class="form-control"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                                <button
+                                  type="button"
+                                  class="
+                                    subscribe
+                                    btn btn-primary btn-block
+                                    rounded-pill
+                                    shadow-sm
+                                  "
+                                >
+                                  Confirm
+                                </button>
+                              </div>
+                               -->
+                              <!-- End -->
+
+                              <!-- Paypal info -->
+                              <div id="nav-tab-paypal" class="tab-pane fade show active">
+                                <p>Paypal es la forma mas afacil de pagar online</p>
+                                <p>
+                                  <button
+                                    type="button"
+                                    class="btn btn-primary rounded-pill"
+                                  >
+                                    <i class="fa fa-paypal mr-2"></i> Log into
+                                    my Paypal
+                                  </button>
+                                </p>
+                                <p class="text-muted">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit, sed do eiusmod tempor
+                                  incididunt ut labore et dolore magna aliqua.
+                                </p>
+                              </div>
+                              <!-- End -->
+
+                              <!-- bank transfer info -->
+                              <div id="nav-tab-bank" class="tab-pane fade">
+                                <h6>Detalles de cuenta bancaria</h6>
+                                <dl>
+                                  <dt>Banco</dt>
+                                  <dd>Banco del Pichincha</dd>
+                                </dl>
+                                <dl>
+                                  <dt>Número de cuenta</dt>
+                                  <dd>7775877975</dd>
+                                </dl>
+                                <dl>
+                                  <dt>IBAN</dt>
+                                  <dd>CZ7775877975656</dd>
+                                </dl>
+                                <p class="text-muted">
+                                  Lorem ipsum dolor sit amet, consectetur
+                                  adipisicing elit, sed do eiusmod tempor
+                                  incididunt ut labore et dolore magna aliqua.
+                                </p>
+                              </div>
+                              <!-- End -->
+                            </div>
+                            <!-- End -->
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                    <!--! PAYMENTS -->
+                    <!--* </div> -->
+
+                    <!-- BUTTONS -->
                     <input
                       type="button"
                       name="next"
@@ -400,7 +617,10 @@
                       class="previous action-button-previous"
                       value="Previous"
                     />
+                    <!-- BUTTONS -->
                   </fieldset>
+
+                  <!--! SECTION: Terminar -->
                   <fieldset>
                     <div class="form-card">
                       <div class="row">
@@ -416,190 +636,10 @@
                   </fieldset>
                 </form>
               </div>
-              <!-- </div> -->
+              <!--* </div> -->
             </div>
           </div>
           <!-- MULTI STEP FORM -->
-        </div>
-
-        <!-- PAYMENTS -->
-        <div class="col-md-4">
-          <div class="container py-5">
-            <div class="row">
-              <div class="bg-white rounded-lg shadow-sm p-5">
-                <!-- Credit card form tabs -->
-                <ul
-                  role="tablist"
-                  class="nav bg-light nav-pills rounded-pill nav-fill mb-3"
-                >
-                  <li class="nav-item">
-                    <a
-                      data-bs-toggle="pill"
-                      href="#nav-tab-card"
-                      class="nav-link active rounded-pill"
-                    >
-                      <i class="fa fa-credit-card"> </i>
-                      Tarjeta de débito o crédito
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      data-bs-toggle="pill"
-                      href="#nav-tab-paypal"
-                      class="nav-link rounded-pill"
-                    >
-                      <i class="fa fa-paypal"> </i>
-                      Paypal
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      data-bs-toggle="pill"
-                      href="#nav-tab-bank"
-                      class="nav-link rounded-pill"
-                    >
-                      <i class="fa fa-university"> </i>
-                      Transferencia
-                    </a>
-                  </li>
-                </ul>
-                <!-- Credit card form tabs -->
-
-                <!-- Credit card form content -->
-                <div class="tab-content">
-                  <!-- credit card info-->
-                  <div id="nav-tab-card" class="tab-pane fade show active">
-                    <p class="alert alert-success">
-                      Some text success or error
-                    </p>
-                    <form role="form">
-                      <div class="form-group">
-                        <label for="username">Full name (on the card)</label>
-                        <input
-                          type="text"
-                          name="username"
-                          placeholder="Jason Doe"
-                          required
-                          class="form-control"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="cardNumber">Card number</label>
-                        <div class="input-group">
-                          <input
-                            type="text"
-                            name="cardNumber"
-                            placeholder="Your card number"
-                            class="form-control"
-                            required
-                          />
-                          <div class="input-group-append">
-                            <span class="input-group-text text-muted">
-                              <i class="fa fa-cc-visa mx-1"></i>
-                              <i class="fa fa-cc-amex mx-1"></i>
-                              <i class="fa fa-cc-mastercard mx-1"></i>
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-8">
-                          <div class="form-group">
-                            <label
-                              ><span class="hidden-xs">Expiration</span></label
-                            >
-                            <div class="input-group">
-                              <input
-                                type="number"
-                                placeholder="MM"
-                                name=""
-                                class="form-control"
-                                required
-                              />
-                              <input
-                                type="number"
-                                placeholder="YY"
-                                name=""
-                                class="form-control"
-                                required
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-4">
-                          <div class="form-group mb-4">
-                            <label
-                              data-toggle="tooltip"
-                              title="Three-digits code on the back of your card"
-                              >CVV
-                              <i class="fa fa-question-circle"></i>
-                            </label>
-                            <input type="text" required class="form-control" />
-                          </div>
-                        </div>
-                      </div>
-                      <button
-                        type="button"
-                        class="
-                          subscribe
-                          btn btn-primary btn-block
-                          rounded-pill
-                          shadow-sm
-                        "
-                      >
-                        Confirm
-                      </button>
-                    </form>
-                  </div>
-                  <!-- End -->
-
-                  <!-- Paypal info -->
-                  <div id="nav-tab-paypal" class="tab-pane fade">
-                    <p>Paypal is easiest way to pay online</p>
-                    <p>
-                      <button
-                        type="button"
-                        class="btn btn-primary rounded-pill"
-                      >
-                        <i class="fa fa-paypal mr-2"></i> Log into my Paypal
-                      </button>
-                    </p>
-                    <p class="text-muted">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                  </div>
-                  <!-- End -->
-
-                  <!-- bank transfer info -->
-                  <div id="nav-tab-bank" class="tab-pane fade">
-                    <h6>Bank account details</h6>
-                    <dl>
-                      <dt>Bank</dt>
-                      <dd>THE WORLD BANK</dd>
-                    </dl>
-                    <dl>
-                      <dt>Account number</dt>
-                      <dd>7775877975</dd>
-                    </dl>
-                    <dl>
-                      <dt>IBAN</dt>
-                      <dd>CZ7775877975656</dd>
-                    </dl>
-                    <p class="text-muted">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                  </div>
-                  <!-- End -->
-                </div>
-                <!-- End -->
-              </div>
-            </div>
-          </div>
-          <!-- PAYMENTS -->
         </div>
       </div>
     </div>

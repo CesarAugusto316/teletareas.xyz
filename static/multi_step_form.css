@@ -13,9 +13,41 @@ p {
 
 .heading {
   color: #673ab7;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: bold;
   margin-bottom: 1.2rem;
+}
+
+.form-box {
+  padding-left: 12px; 
+  padding-right: 12px;
+  /* height: 450px */
+  /* transform: scaleY(0.95); */
+}
+
+ol.tarifa-input {
+  margin: auto;
+  padding-left: 0px;
+  margin-bottom: 1rem;
+  display: table;
+}
+/* input[type="radio"], */
+/* input[type="range"], */
+.tarifa-input li{
+  display: inline-table;
+  /* grid-column: 2; */
+  /* margin:auto; */
+  padding-right: 10px;
+  /* padding-left: 0; */
+}
+input[type="radio"], 
+input[type="range"],
+.form-select {
+  max-width: 7.25rem;
+  font-size: small;
+}
+ol.tarifa-input.paginas {
+  width: 15.4rem;
 }
 
 #msform {
@@ -25,13 +57,14 @@ p {
 }
 
 #msform fieldset {
+  /* max-height: 520px; */
   background: whitesmoke;
   border: 0 none;
   border-radius: 0.5rem;
   box-sizing: border-box;
   width: 100%;
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   position: relative;
 }
 
@@ -42,25 +75,6 @@ p {
 
  #msform fieldset:not(:first-of-type) {
   display: none;
-}
-
-#msform select,
-#msform input[type='number'],
-#msform textarea {
-  /* padding: 8px 15px 8px 15px; */
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 8px;
-  margin-top: 2px;
-  height: 1.95rem;
-  width: 9.5rem;
-  box-sizing: border-box;
-  font-family: montserrat;
-  color: #2c3e50;
-  background-color: #eceff1;
-  font-size: 13.5px;
-  letter-spacing: 0.5px;
-  text-align: center !important;
 }
 
 #msform select:focus,
@@ -156,6 +170,7 @@ p {
   margin-bottom: 20px;
   overflow: hidden;
   color: lightgrey;
+  padding-left: 0;
 }
 
 #progressbar .active {
@@ -251,7 +266,7 @@ table {
   color: #616161;
   line-height: 1.2;
   font-size: 14.70px;
-  margin: 0 auto
+  margin: auto
   /* column-span: 30px; */
 }
 
@@ -277,5 +292,13 @@ div.price{
   border: 1.5px solid lightgray;
   width: 16rem;
   border-radius: 5px;
+  margin: auto;
 }
 
+.archivos input {
+  width: 100%; 
+}
+.archivos {
+  max-width: 50%;
+  margin: auto;
+}
